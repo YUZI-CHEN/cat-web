@@ -1,0 +1,54 @@
+@use 'reset';
+
+.bubble-circle {
+  animation: rotating 15s linear infinite;
+  background: #47DDFA;
+  border-radius: 335.383px 406px 323.168px 384.988px;
+  bottom: 0;
+  display: block;
+  height: 500px;
+  margin: 50px auto;
+  transition: background-color 2s ease-out;
+  width: 500px;
+  background-size: cover;
+  background-position: center;
+  transition: border-color 0.5s, border-width 0.5s; /* 添加平滑过渡效果 */
+  border: 5px solid #000; /* 默认边框宽度和颜色 */
+
+}
+
+@-webkit-keyframes rotating{ /* Safari and Chrome */ 
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 15s linear infinite;
+  -moz-animation: rotating 15s linear infinite;
+  -ms-animation: rotating 15s linear infinite;
+  -o-animation: rotating 15s linear infinite;
+  animation: rotating 15s linear infinite;
+}
