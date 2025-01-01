@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/map.min.css">
+  </head>
+
+  <body>
+    <main>
+      <!-- 搜索區 -->
+      <section id="search-box">
+
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">捷運線</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">標籤搜尋</button>
+
+        </div>
+
+        <div id="London" class="tabcontent">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+
+
+      </section>
+
+      <!-- map區 -->
+      <section id="map">
+        <div id="mrt">
+          <img src="./img/mrt.svg" alt="捷運圖">
+
+        </div>
+        <div id="red-line" class="line">
+          <img src="./img/freshwater.png" alt="淡水線">
+        </div>
+        <div id="blue-line" class="line">
+          <img src="./img/bannan.svg" alt="板南線">
+
+        </div>
+        <div id="orange-line" class="line">
+          <img src="./img/luzhou.svg" alt="蘆洲線">
+        </div>
+        <div id="yellow-line" class="line">
+          <img src="./img/newTaipei.svg" alt="新北線">
+        </div>
+        <div id="brown-line" class="line">
+          <img src="./img/nucha.svg" alt="">
+        </div>
+
+        <div id="green-line" class="line">
+          <img src="./img/xindian.svg" alt="">
+        </div>
+
+        <div  id="">
+
+        </div>
+      </section>
+    </main>
+    <script src="./js/nav.js"></script>
+  </body>
+
 </html>

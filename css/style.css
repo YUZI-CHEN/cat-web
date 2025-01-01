@@ -63,7 +63,8 @@ a {
   width: 500px;
   background-size: cover;
   background-position: center;
-  transition: border-color 0.5s, border-width 0.5s; /* 添加平滑过渡效果 */
+  transition: border-color 0.5s, border-width 0.5s;
+  /* 添加平滑过渡效果 */
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
 }
 @keyframes rotating {

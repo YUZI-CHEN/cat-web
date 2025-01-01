@@ -1,1 +1,151 @@
-/*# sourceMappingURL=map.css.map */
+@charset "UTF-8";
+main {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-box {
+  display: flex;
+  flex-direction: column;
+  /* 將方向設置為垂直排列 */
+  height: auto;
+  width: 25%;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+.tab {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button .active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 0px;
+  border: 1px solid #ccc;
+  width: 210px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#map .line {
+  display: none;
+}
+
+#mrt {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+#mrt img {
+  opacity: 0.5;
+  width: 100%;
+  height: 780px;
+}
+
+#red-line {
+  position: absolute;
+  width: 540px;
+  height: auto;
+  top: 98px;
+  left: 120px;
+}
+#red-line img {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+}
+
+#blue-line {
+  position: absolute;
+  width: 694px;
+  height: auto;
+  top: 448px;
+  left: 136px;
+}
+#blue-line img {
+  width: 100%;
+  height: auto;
+}
+
+#orange-line {
+  position: absolute;
+  width: 420px;
+  height: auto;
+  top: 280px;
+  left: 73px;
+}
+#orange-line img {
+  width: 100%;
+  height: auto;
+}
+
+#yellow-line {
+  position: absolute;
+  width: 507px;
+  height: auto;
+  top: 476px;
+  left: 82px;
+}
+#yellow-line img {
+  width: 100%;
+  height: auto;
+}
+
+#brown-line {
+  position: absolute;
+  width: 394px;
+  height: auto;
+  top: 295.5px;
+  right: 70px;
+}
+#brown-line img {
+  width: 100%;
+  height: auto;
+}
+
+#green-line {
+  position: absolute;
+  width: 408px;
+  height: auto;
+  top: 469px;
+  left: 250px;
+}
+#green-line img {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=map.css.map */

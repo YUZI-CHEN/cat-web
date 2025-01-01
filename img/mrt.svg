@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 976.65 989.65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231815;
+        font-family: jf-openhuninn-2.0, jf-openhuninn-2.0;
+        font-size: 16px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
+
+      .cls-2, .cls-8, .cls-10, .cls-13, .cls-17, .cls-18 {
+        stroke-dasharray: 0 12;
+      }
+
+      .cls-2, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-13, .cls-28 {
+        stroke: #f3e465;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 0 0 11.93 11.93;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21 {
+        fill: none;
+      }
+
+      .cls-3, .cls-6, .cls-7, .cls-22, .cls-12, .cls-16 {
+        stroke: #d7636d;
+      }
+
+      .cls-4 {
+        stroke-dasharray: 0 0 13.66 13.66;
+      }
+
+      .cls-4, .cls-5, .cls-9, .cls-11, .cls-14, .cls-15, .cls-19, .cls-20, .cls-21, .cls-27 {
+        stroke: #4bb784;
+      }
+
+      .cls-5 {
+        stroke-dasharray: 0 0 12.36 12.36;
+      }
+
+      .cls-7 {
+        stroke-dasharray: 0 0 12.71 12.71;
+      }
+
+      .cls-8, .cls-26 {
+        stroke: #e4007f;
+      }
+
+      .cls-9 {
+        stroke-dasharray: 0 0 11.38 11.38;
+      }
+
+      .cls-10, .cls-24 {
+        stroke: #d0934c;
+      }
+
+      .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-11 {
+        stroke-dasharray: 0 0 12.27 12.27;
+      }
+
+      .cls-12 {
+        stroke-dasharray: 0 0 12.15 12.15;
+      }
+
+      .cls-14 {
+        stroke-dasharray: 0 0 9.56 9.56;
+      }
+
+      .cls-15 {
+        stroke-dasharray: 0 0 10.18 10.18;
+      }
+
+      .cls-16 {
+        stroke-dasharray: 0 0 12.25 12.25;
+      }
+
+      .cls-17, .cls-25 {
+        stroke: #4eacc8;
+      }
+
+      .cls-18, .cls-23 {
+        stroke: #eb806e;
+      }
+
+      .cls-19 {
+        stroke-dasharray: 0 0 12.54 12.54;
+      }
+
+      .cls-20 {
+        stroke-dasharray: 0 0 11.3 11.3;
+      }
+    </style>
+  </defs>
+  <g id="_淡水線" data-name="淡水線">
+    <g>
+      <line class="cls-6" x1="117.94" y1="5.24" x2="118.08" y2="11.23"/>
+      <line class="cls-7" x1="118.38" y1="23.94" x2="121.18" y2="144.65"/>
+      <polyline class="cls-6" points="121.33 151 121.47 157 127.47 157"/>
+      <line class="cls-3" x1="139.4" y1="157" x2="348.1" y2="157"/>
+      <polyline class="cls-6" points="354.06 157 360.06 157 360.01 163"/>
+      <line class="cls-16" x1="359.9" y1="175.25" x2="355.93" y2="634.76"/>
+      <polyline class="cls-6" points="355.88 640.88 355.82 646.88 361.82 646.88"/>
+      <line class="cls-12" x1="373.97" y1="646.88" x2="707.99" y2="646.88"/>
+      <line class="cls-6" x1="714.06" y1="646.88" x2="720.06" y2="646.88"/>
+    </g>
+    <line class="cls-8" x1="235.82" y1="115.71" x2="235.82" y2="146.06"/>
+    <ellipse class="cls-22" cx="121.12" cy="9.65" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="121.12" cy="50.24" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="119.71" cy="89.41" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="121.12" cy="130.71" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="144.41" cy="157.53" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="191.71" cy="157.53" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="235.82" cy="157.53" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="279.24" cy="157.53" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="327.59" cy="157.53" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="183.65" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="221.76" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="259.88" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="295.53" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="333.29" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="371.06" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="422.24" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="461.94" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="496.53" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="564.47" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="603.12" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="359.49" cy="641.76" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="445.44" cy="645.76" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="501.94" cy="645.76" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="558.71" cy="645.76" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="623.35" cy="645.76" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="674.88" cy="645.76" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-22" cx="727.12" cy="645.76" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-26" cx="235.82" cy="104.24" rx="12.35" ry="8.65"/>
+    <text class="cls-1" transform="translate(71.85 15.51)"><tspan x="0" y="0">淡水</tspan></text>
+    <text class="cls-1" transform="translate(64.01 53.27)"><tspan x="0" y="0">紅樹林</tspan></text>
+    <text class="cls-1" transform="translate(72.23 92.43)"><tspan x="0" y="0">竹圍</tspan></text>
+    <text class="cls-1" transform="translate(71.69 135.03)"><tspan x="0" y="0">關渡</tspan></text>
+    <text class="cls-1" transform="translate(127.52 183.63)"><tspan x="0" y="0">忠義</tspan></text>
+    <text class="cls-1" transform="translate(169.38 183.63)"><tspan x="0" y="0">復興崗</tspan></text>
+    <text class="cls-1" transform="translate(219.58 183.64)"><tspan x="0" y="0">北投</tspan></text>
+    <text class="cls-1" transform="translate(261.95 183.72)"><tspan x="0" y="0">奇岩</tspan></text>
+    <text class="cls-1" transform="translate(297.11 183.62)"><tspan x="0" y="0" xml:space="preserve"> 唭哩岸</tspan></text>
+    <text class="cls-1" transform="translate(379.51 185.16)"><tspan x="0" y="0">石牌</tspan></text>
+    <text class="cls-1" transform="translate(379.16 223.3)"><tspan x="0" y="0">明德</tspan></text>
+    <text class="cls-1" transform="translate(379.95 265.33)"><tspan x="0" y="0">芝山</tspan></text>
+    <text class="cls-1" transform="translate(379.48 300.92)"><tspan x="0" y="0">士林</tspan></text>
+    <text class="cls-1" transform="translate(379.5 337.55)"><tspan x="0" y="0">劍潭</tspan></text>
+    <text/>
+    <text class="cls-1" transform="translate(379.66 375.12)"><tspan x="0" y="0">圓山</tspan></text>
+    <text class="cls-1" transform="translate(371.84 403.12)"><tspan x="0" y="0">民權西路</tspan></text>
+    <text class="cls-1" transform="translate(379.58 464.35)"><tspan x="0" y="0">雙連</tspan></text>
+    <text class="cls-1" transform="translate(379.57 488.02)"><tspan x="0" y="0">中山</tspan></text>
+    <text class="cls-1" transform="translate(363.48 544.1)"><tspan x="0" y="0">台北車站</tspan></text>
+    <text class="cls-1" transform="translate(380.39 611.76)"><tspan x="0" y="0">臺大醫院</tspan></text>
+    <text class="cls-1" transform="translate(303.29 672.61)"><tspan x="0" y="0">中山紀念堂</tspan></text>
+    <text class="cls-1" transform="translate(437.97 672.6)"><tspan x="0" y="0">東門</tspan></text>
+    <text class="cls-1" transform="translate(485.94 608.75)"><tspan x="0" y="0">大安</tspan><tspan x="-16" y="20">森林公園</tspan></text>
+    <text class="cls-1" transform="translate(563.35 627.44)"><tspan x="0" y="0">大安</tspan></text>
+    <text class="cls-1" transform="translate(614.27 627.43)"><tspan x="0" y="0">信義安和</tspan></text>
+    <text class="cls-1" transform="translate(629.6 672.61)"><tspan x="0" y="0">台北101/世貿</tspan></text>
+    <text class="cls-1" transform="translate(713.76 627.44)"><tspan x="0" y="0">象山</tspan></text>
+    <text class="cls-1" transform="translate(212.75 89.41)"><tspan x="0" y="0">新北投</tspan></text>
+  </g>
+  <g id="_蘆洲線" data-name="蘆洲線">
+    <path class="cls-18" d="M431.45,659.98c-15.33,14.37-30.33,27.37-45.33,41.37-3,51,0,103-.65,154.12"/>
+    <path class="cls-18" d="M444.52,424.18c4.6,1.18,8.6-.82,13.6,1.18v210"/>
+    <path class="cls-18" d="M158.88,232.88c.24,35.47,.24,71.47,.24,106.47,27,28,56,54,83,83,1,1,3,2,5,2,30,0,61,0,91.21-.18"/>
+    <polyline class="cls-18" points="14.88 752.41 11.35 620.41 245 424.18"/>
+    <line class="cls-18" x1="372.71" y1="424.35" x2="453.58" y2="424.35"/>
+  </g>
+  <g id="_蘆洲點" data-name="蘆洲點">
+    <path class="cls-23" d="M169.82,240.4c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M169.82,241.53c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M169.82,282.79c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M169.82,283.92c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M169.82,324.22c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M169.82,325.34c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M194.99,363.61c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M194.99,364.74c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M228.27,394.12c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M228.27,395.24c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M225.97,447.84c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M225.97,448.97c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M191.71,477.67c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M191.71,478.8c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M152.88,512.13c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M152.88,513.26c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M111.2,545.08c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M111.2,546.21c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M67.42,579.08c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M67.42,580.21c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M25.71,628.19c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M25.71,629.32c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M25.71,665.69c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M25.71,666.82c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M25.71,711.28c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M25.71,712.41c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M25.71,744.46c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M25.71,745.59c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M300.41,423.61c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M300.41,424.74c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M368.53,421.82c0,3.5-4.05,6.33-9.05,6.33s-9.05-2.84-9.05-6.33"/>
+    <path class="cls-23" d="M368.53,422.65c0-3.5-4.05-6.33-9.05-6.33s-9.05,2.84-9.05,6.33"/>
+    <path class="cls-23" d="M438.95,423.05c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M438.95,424.18c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M471.57,448.41c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M471.57,449.53c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M471.57,495.97c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M471.57,497.09c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M471.57,563.91c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M471.57,565.03c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M454.49,645.35c0,3.5-4.05,6.33-9.05,6.33s-9.05-2.84-9.05-6.33"/>
+    <path class="cls-23" d="M454.49,646.18c0-3.5-4.05-6.33-9.05-6.33s-9.05,2.84-9.05,6.33"/>
+    <path class="cls-23" d="M416.18,680.12c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M416.18,681.25c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M397.47,724.5c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M397.47,725.62c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M397.47,761.35c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M397.47,762.47c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M397.47,802.5c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M397.47,803.62c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+    <path class="cls-23" d="M397.47,846.82c0,4.78-5.53,8.65-12.35,8.65s-12.35-3.87-12.35-8.65"/>
+    <path class="cls-23" d="M397.47,847.95c0-4.78-5.53-8.65-12.35-8.65s-12.35,3.87-12.35,8.65"/>
+  </g>
+  <g id="_蘆洲名稱" data-name="蘆洲名稱">
+    <text class="cls-1" transform="translate(379.51 185.16)"><tspan x="0" y="0">石牌</tspan></text>
+    <text class="cls-1" transform="translate(170.28 244.73)"><tspan x="0" y="0">蘆洲</tspan></text>
+    <text class="cls-1" transform="translate(171.14 288.2)"><tspan x="0" y="0">三民高中</tspan></text>
+    <text class="cls-1" transform="translate(172.03 328.54)"><tspan x="0" y="0">徐匯中學</tspan></text>
+    <text class="cls-1" transform="translate(197.05 362.41)"><tspan x="0" y="0">三和國中</tspan></text>
+    <text class="cls-1" transform="translate(231.04 389.78)"><tspan x="0" y="0">三重國小</tspan></text>
+    <text class="cls-1" transform="translate(280.02 407.94)"><tspan x="0" y="0">大橋頭</tspan></text>
+    <text class="cls-1" transform="translate(434.96 411.02)"><tspan x="0" y="0">中山國小</tspan></text>
+    <text class="cls-1" transform="translate(480.22 453.29)"><tspan x="0" y="0">行天宮</tspan></text>
+    <text class="cls-1" transform="translate(471.13 481.2)"><tspan x="0" y="0">松江南京</tspan></text>
+    <text class="cls-1" transform="translate(473.66 548.56) scale(.95 1)"><tspan x="0" y="0">忠孝新生</tspan></text>
+    <text class="cls-1" transform="translate(402.11 723.3)"><tspan x="0" y="0">頂溪</tspan></text>
+    <text class="cls-1" transform="translate(402.15 759.73)"><tspan x="0" y="0">永安市場</tspan></text>
+    <text class="cls-1" transform="translate(402.18 795.15)"><tspan x="0" y="0">景安</tspan></text>
+    <text class="cls-1" transform="translate(404.05 857.47)"><tspan x="0" y="0">南勢角</tspan></text>
+    <text class="cls-1" transform="translate(436.39 692.73)"><tspan x="0" y="0">古亭</tspan></text>
+    <text class="cls-1" transform="translate(228.27 461.94)"><tspan x="0" y="0">台北橋</tspan></text>
+    <text class="cls-1" transform="translate(197.94 492.77)"><tspan x="0" y="0">菜寮</tspan></text>
+    <text class="cls-1" transform="translate(157.47 524.84)"><tspan x="0" y="0">三重</tspan></text>
+    <text class="cls-1" transform="translate(114.97 562.48)"><tspan x="0" y="0">先嗇宮</tspan></text>
+    <text class="cls-1" transform="translate(86.49 592.06)"><tspan x="0" y="0">頭前庄</tspan></text>
+    <text class="cls-1" transform="translate(30.7 632.51)"><tspan x="0" y="0">新莊</tspan></text>
+    <text class="cls-1" transform="translate(30.69 670.02)"><tspan x="0" y="0">輔大</tspan></text>
+    <text class="cls-1" transform="translate(30.56 714.18)"><tspan x="0" y="0">丹鳳</tspan></text>
+    <text class="cls-1" transform="translate(30.64 756.98)"><tspan x="0" y="0">迴龍</tspan></text>
+    <text class="cls-1" transform="translate(371.84 403.12)"><tspan x="0" y="0">民權西路</tspan></text>
+    <text class="cls-1" transform="translate(438.25 672.81)"><tspan x="0" y="0">東門</tspan></text>
+  </g>
+  <g id="_板南線" data-name="板南線">
+    <path class="cls-17" d="M483.62,567.25c124.5,.11,247.5,2.11,371.5-1.89,0-39,0-77-.24-115.82"/>
+    <path class="cls-17" d="M390,567.36c13.74-.09,27.48-.14,41.22-.16"/>
+    <path class="cls-17" d="M166.65,933.82c.47-122.47,.47-244.47,.47-366.47,59,0,119,0,178.43,.12"/>
+  </g>
+  <g id="_板南點" data-name="板南點">
+    <ellipse class="cls-25" cx="166.65" cy="926.59" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="166.65" cy="888.12" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="166.65" cy="849.65" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="166.65" cy="812.27" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="166.65" cy="771.12" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="166.65" cy="733.14" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="166.65" cy="691.49" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="166.65" cy="649.83" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="166.65" cy="606.69" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="213.61" cy="566.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="292.59" cy="566.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="556.09" cy="566.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="618.25" cy="566.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="669.37" cy="566.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="720.06" cy="566.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="774.01" cy="566.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="826.64" cy="566.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="459.22" cy="564.16" rx="8.9" ry="6.23"/>
+    <ellipse class="cls-25" cx="359.49" cy="564.16" rx="8.9" ry="6.23"/>
+    <ellipse class="cls-25" cx="855.65" cy="536.94" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="855.65" cy="496" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="855.65" cy="453.29" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-25" cx="411.08" cy="566.16" rx="12.35" ry="8.65"/>
+  </g>
+  <g id="_板南名稱" data-name="板南名稱">
+    <text class="cls-1" transform="translate(115.78 933.76)"><tspan x="0" y="0">頂埔</tspan></text>
+    <text class="cls-1" transform="translate(115.84 896.34)"><tspan x="0" y="0">永寧</tspan></text>
+    <text class="cls-1" transform="translate(115.76 855.61)"><tspan x="0" y="0">土城</tspan></text>
+    <text class="cls-1" transform="translate(116.14 819.6)"><tspan x="0" y="0">海山</tspan></text>
+    <text class="cls-1" transform="translate(83.75 774.94)"><tspan x="0" y="0">亞東醫院</tspan></text>
+    <text class="cls-1" transform="translate(116.13 737.72)"><tspan x="0" y="0">府中</tspan></text>
+    <text class="cls-1" transform="translate(115.8 697.3)"><tspan x="0" y="0">板橋</tspan></text>
+    <text class="cls-1" transform="translate(184.81 655.47) rotate(.72)"><tspan x="0" y="0">新埔</tspan></text>
+    <text class="cls-1" transform="translate(184.73 613.02)"><tspan x="0" y="0">江子翠</tspan></text>
+    <text class="cls-1" transform="translate(184.24 553.98)"><tspan x="0" y="0">龍山寺</tspan></text>
+    <text class="cls-1" transform="translate(242.68 551.89)"><tspan x="0" y="0">西門</tspan></text>
+    <text class="cls-1" transform="translate(384.1 590.59)"><tspan x="0" y="0">善導寺</tspan></text>
+    <text class="cls-1" transform="translate(565.47 549.56)"><tspan x="0" y="0">忠孝復興</tspan></text>
+    <text class="cls-1" transform="translate(586.25 591.35)"><tspan x="0" y="0">忠孝敦化</tspan></text>
+    <text class="cls-1" transform="translate(637.47 550.09)"><tspan x="0" y="0">國父紀念館</tspan></text>
+    <text class="cls-1" transform="translate(693.99 591.33)"><tspan x="0" y="0">市政府</tspan></text>
+    <text class="cls-1" transform="translate(758.01 591.32)"><tspan x="0" y="0">永春</tspan></text>
+    <text class="cls-1" transform="translate(806.53 591.31)"><tspan x="0" y="0">後山埤</tspan></text>
+    <text class="cls-1" transform="translate(880.65 544.08)"><tspan x="0" y="0">昆陽</tspan></text>
+    <text class="cls-1" transform="translate(880.54 500.67)"><tspan x="0" y="0">南港</tspan></text>
+    <text class="cls-1" transform="translate(880.54 457.97)"><tspan x="0" y="0">南港展覽館</tspan></text>
+    <text class="cls-1" transform="translate(472.43 548.39)"><tspan x="0" y="0">忠孝新生</tspan></text>
+    <text class="cls-1" transform="translate(363.06 543.82)"><tspan x="0" y="0">台北車站</tspan></text>
+  </g>
+  <g id="_新北線" data-name="新北線">
+    <path class="cls-13" d="M406.53,807.32c16.59,1.03,33.59-1.97,50.59,1.03,2,1,5,2,7,4s5,3,7,5c10,10,21,19,33,26,28,3,55,0,83.16,1.35"/>
+    <path class="cls-13" d="M214.31,711.8c4.81,1.55,5.81,6.55,9.81,9.55,33,24,57,50,88,75,5,4,10,7,15,11,14,0,29,0,42.8,.23"/>
+    <path class="cls-13" d="M71.26,592.32c21.99,19.26,44.96,37.35,67.45,56.02,2.96,2.46,4.85,5.72,7.69,8.21,3.1,2.72,6.69,5.02,9.96,7.55l11.7,33.19,45.55,12.75"/>
+    <path class="cls-13" d="M25.71,500.29c-.59,17.06,.41,35.06,.41,52.06,0,4,6,5,7.87,8.6"/>
+    <line class="cls-2" x1="31.56" y1="560.95" x2="42.72" y2="569.59"/>
+  </g>
+  <g id="_新北點" data-name="新北點">
+    <ellipse class="cls-28" cx="25.71" cy="504.4" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="25.71" cy="548.56" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="55.07" cy="579.31" rx="10.26" ry="7.18"/>
+    <ellipse class="cls-28" cx="137.51" cy="648.62" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="166.65" cy="691.49" rx="10.97" ry="7.68"/>
+    <ellipse class="cls-28" cx="223.12" cy="721.3" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="257.35" cy="747.9" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="294.65" cy="782.43" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="329.27" cy="807.95" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="441.24" cy="806.82" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="481" cy="825.86" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="526.41" cy="843.63" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="582.65" cy="843.63" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-28" cx="385.11" cy="802.5" rx="9.02" ry="6.31"/>
+  </g>
+  <g id="_新北名稱" data-name="新北名稱">
+    <text class="cls-1" transform="translate(39.82 491.24)"><tspan x="0" y="0">新北</tspan><tspan x="0" y="20">產業園區</tspan></text>
+    <text class="cls-1" transform="translate(41.01 546.21)"><tspan x="0" y="0">幸福</tspan></text>
+    <text class="cls-1" transform="translate(59.59 657.27)"><tspan x="0" y="0">新埔民生</tspan></text>
+    <text class="cls-1" transform="translate(115.83 697.3)"><tspan x="0" y="0">板橋</tspan></text>
+    <text class="cls-1" transform="translate(240.4 714.18)"><tspan x="0" y="0">板新</tspan></text>
+    <text class="cls-1" transform="translate(272.58 743.94)"><tspan x="0" y="0">中原</tspan></text>
+    <text class="cls-1" transform="translate(311.06 773.78)"><tspan x="0" y="0">橋和</tspan></text>
+    <text class="cls-1" transform="translate(278.65 822.26)"><tspan x="0" y="0">中和</tspan></text>
+    <text class="cls-1" transform="translate(453.59 796.18)"><tspan x="0" y="0">景平</tspan></text>
+    <text class="cls-1" transform="translate(414.57 835.03)"><tspan x="0" y="0">秀郎橋</tspan></text>
+    <text class="cls-1" transform="translate(496.9 825.86)"><tspan x="0" y="0">十四張</tspan></text>
+    <text class="cls-1" transform="translate(607.95 847.63)"><tspan x="0" y="0">大坪林</tspan></text>
+    <text class="cls-1" transform="translate(86.49 592.59)"><tspan x="0" y="0">頭前庄</tspan></text>
+    <text class="cls-1" transform="translate(402.05 794.85)"><tspan x="0" y="0">景安</tspan></text>
+  </g>
+  <g id="_新店" data-name="新店">
+    <g>
+      <path class="cls-21" d="M587.62,862.25c.12,2,.23,4,.33,5.99"/>
+      <path class="cls-11" d="M588.39,880.5c.8,30.75-.8,61.08-1.08,92.01"/>
+      <path class="cls-21" d="M587.28,978.65c0,2,0,4,0,6"/>
+    </g>
+    <g>
+      <path class="cls-21" d="M421.84,693.8c1.5,1.32,3.01,2.64,4.51,3.95"/>
+      <path class="cls-20" d="M434.86,705.19c16.29,14.24,32.59,28.45,48.78,42.8,19.91,17.66,39.07,36.18,59.56,53.18,7.82,6.49,16.02,12.52,23.8,19.05"/>
+      <path class="cls-21" d="M571.27,823.91c1.5,1.33,2.97,2.68,4.42,4.06"/>
+    </g>
+    <g>
+      <path class="cls-21" d="M374.56,652.28c1.33,1.53,2.74,2.94,4.2,4.28"/>
+      <path class="cls-21" d="M387.9,664.06c1.56,1.23,3.12,2.47,4.66,3.78"/>
+    </g>
+    <g>
+      <path class="cls-21" d="M293.11,582.44c0,2,0,4,0,6"/>
+      <path class="cls-15" d="M293.11,598.62c0,11.88-.01,23.76-.02,35.64"/>
+      <path class="cls-21" d="M293.08,639.35c0,2,0,4,0,6,.99,0,1.99-.03,2.98-.12-.99-.12-2-.09-2.98,.12,2,.09,4,.14,6,.17"/>
+      <path class="cls-4" d="M312.74,645.43c6.83-.17,13.66-.46,20.49-.64"/>
+      <path class="cls-21" d="M340.06,644.67c2-.02,4-.02,6,0"/>
+    </g>
+    <g>
+      <path class="cls-21" d="M339.23,500.35c-1.98,.13-3.98,.21-5.99,.26"/>
+      <path class="cls-9" d="M321.85,500.58c-5.7-.1-11.42-.24-17.08-.09"/>
+      <path class="cls-21" d="M299.09,500.76c-2,.14-4,.33-5.97,.6v6"/>
+      <path class="cls-19" d="M293.12,519.9c0,6.3,0,12.54,0,18.82"/>
+      <path class="cls-21" d="M293.12,544.98c0,1.99,0,3.99,0,6"/>
+    </g>
+    <g>
+      <path class="cls-21" d="M439.83,500.3c-2,0-4,0-6,0"/>
+      <path class="cls-14" d="M424.27,500.31c-11.15,.01-22.3,.02-33.46,.02"/>
+      <path class="cls-21" d="M386.04,500.34c-2,0-4,0-6,0"/>
+    </g>
+    <g>
+      <path class="cls-21" d="M729.09,500.29c-2,0-4,0-6,0"/>
+      <path class="cls-5" d="M710.73,500.3c-71.92,.05-144.5,.05-216.27,0"/>
+      <path class="cls-21" d="M488.28,500.3c-2,0-4,0-6,0"/>
+    </g>
+  </g>
+  <g id="_新店點" data-name="新店點">
+    <ellipse class="cls-27" cx="730" cy="497.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="671.06" cy="497.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="624.57" cy="497.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="554.01" cy="497.16" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="459.74" cy="497.16" rx="9.97" ry="6.98"/>
+    <ellipse class="cls-27" cx="359.79" cy="497.16" rx="9.97" ry="6.98"/>
+    <ellipse class="cls-27" cx="292.85" cy="566.16" rx="9.97" ry="6.98"/>
+    <ellipse class="cls-27" cx="292.85" cy="633.12" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="360.55" cy="641.76" rx="9.97" ry="6.98"/>
+    <ellipse class="cls-27" cx="404.05" cy="681.25" rx="9.97" ry="6.98"/>
+    <ellipse class="cls-27" cx="450.08" cy="716.97" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="483.62" cy="747.9" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="514.06" cy="774.94" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="546.35" cy="802.5" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="588.46" cy="891.51" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="588.46" cy="930.62" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="588.46" cy="971.35" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-27" cx="582.65" cy="843.63" rx="9.97" ry="6.98"/>
+    <ellipse class="cls-27" cx="292.11" cy="515.96" rx="12.35" ry="8.65"/>
+  </g>
+  <g id="_新店名稱" data-name="新店名稱">
+    <text class="cls-1" transform="translate(608.03 975.43)"><tspan x="0" y="0">新店</tspan></text>
+    <text class="cls-1" transform="translate(608.03 935.64)"><tspan x="0" y="0">新店區公所</tspan></text>
+    <text class="cls-1" transform="translate(607.89 896.18)"><tspan x="0" y="0">七張</tspan></text>
+    <text class="cls-1" transform="translate(563.26 799.3)"><tspan x="0" y="0">景美</tspan></text>
+    <text class="cls-1" transform="translate(529.61 769.99)"><tspan x="0" y="0">萬隆</tspan></text>
+    <text class="cls-1" transform="translate(498.76 741.35)"><tspan x="0" y="0">公館</tspan></text>
+    <text class="cls-1" transform="translate(465.18 710.52)"><tspan x="0" y="0">台電大樓</tspan></text>
+    <text class="cls-1" transform="translate(225.97 641.18)"><tspan x="0" y="0">小南門</tspan></text>
+    <text class="cls-1" transform="translate(243.59 513.26)"><tspan x="0" y="0">北門</tspan></text>
+    <text class="cls-1" transform="translate(567.03 481.2)"><tspan x="0" y="0">南京復興</tspan></text>
+    <text class="cls-1" transform="translate(592.61 526.53)"><tspan x="0" y="0">台北小巨蛋</tspan></text>
+    <text class="cls-1" transform="translate(642.04 481.2)"><tspan x="0" y="0">南京三民</tspan></text>
+    <text class="cls-1" transform="translate(711.59 524.84)"><tspan x="0" y="0">松山</tspan></text>
+    <text class="cls-1" transform="translate(471.57 481.2)"><tspan x="0" y="0">松江南京</tspan></text>
+    <text class="cls-1" transform="translate(380.04 487.35)"><tspan x="0" y="0">中山</tspan></text>
+    <text class="cls-1" transform="translate(243.26 551.98)"><tspan x="0" y="0">西門</tspan></text>
+    <text class="cls-1" transform="translate(303.65 672.77)"><tspan x="0" y="0">中山紀念堂</tspan></text>
+    <text class="cls-1" transform="translate(436.39 692.73)"><tspan x="0" y="0">古亭</tspan></text>
+    <text class="cls-1" transform="translate(607.95 847.74)"><tspan x="0" y="0">大坪林</tspan></text>
+  </g>
+  <g id="_動物園線" data-name="動物園線">
+    <path class="cls-10" d="M554.11,667.48c0,9.88,0,19.88,2.01,29.88,52,5,104-1,156,4,2,44-2,88,1,132,0,1,1,2,2,2,33,0,66,0,99.17-.48"/>
+    <path class="cls-10" d="M553.88,583.51c-.65,13.18-.79,26.38-.66,39.58"/>
+    <path class="cls-10" d="M554.1,516.98c.17,10.42,.2,20.85,.15,31.28"/>
+    <path class="cls-10" d="M855.59,434.44c-.63-36.76,2.37-73.76-.63-110.76-101-2-198.85-2.32-299.85,1.68-3,52,0,103-1.01,154.65"/>
+  </g>
+  <g id="_動物園點" data-name="動物園點">
+    <ellipse class="cls-24" cx="855.65" cy="452.78" rx="9.62" ry="6.74"/>
+    <ellipse class="cls-24" cx="855.48" cy="410.17" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="855.48" cy="370.41" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="855.12" cy="324.46" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="810.88" cy="324.46" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="756.29" cy="324.46" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="707.11" cy="324.46" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="658.87" cy="324.46" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="610.64" cy="324.46" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="562.4" cy="324.46" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="554.01" cy="369.94" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="554.01" cy="407.94" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="554.01" cy="445.94" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="558.71" cy="684.09" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="616.13" cy="699.68" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="681.59" cy="699.68" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="711.98" cy="729.08" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="711.98" cy="768" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="711.98" cy="802.5" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="742.41" cy="834.17" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="791.82" cy="834.17" rx="12.35" ry="8.65"/>
+    <ellipse class="cls-24" cx="558.71" cy="645.76" rx="9.62" ry="6.74"/>
+    <ellipse class="cls-24" cx="556.09" cy="566.16" rx="9.62" ry="6.74"/>
+    <ellipse class="cls-24" cx="553.88" cy="497.16" rx="9.62" ry="6.74"/>
+  </g>
+  <g id="_動物園名稱" data-name="動物園名稱">
+    <text class="cls-1" transform="translate(880.53 457.97)"><tspan x="0" y="0">南港展覽館</tspan></text>
+    <text class="cls-1" transform="translate(880.65 415.74)"><tspan x="0" y="0">南港軟體園區</tspan></text>
+    <text class="cls-1" transform="translate(881.6 376.65)"><tspan x="0" y="0">東湖</tspan></text>
+    <text class="cls-1" transform="translate(881.54 328.54)"><tspan x="0" y="0">葫洲</tspan></text>
+    <text class="cls-1" transform="translate(738.87 304.26)"><tspan x="0" y="0">內湖</tspan></text>
+    <text class="cls-1" transform="translate(784.54 304.26)"><tspan x="0" y="0">大湖公園</tspan></text>
+    <text class="cls-1" transform="translate(694.76 304.21)"><tspan x="0" y="0">文德</tspan></text>
+    <text class="cls-1" transform="translate(647.51 304.24)"><tspan x="0" y="0">港墘</tspan></text>
+    <text class="cls-1" transform="translate(602.41 304.26)"><tspan x="0" y="0">西湖</tspan></text>
+    <text class="cls-1" transform="translate(535.21 304.24)"><tspan x="0" y="0">劍南路</tspan></text>
+    <text class="cls-1" transform="translate(577.19 376.65)"><tspan x="0" y="0">大直</tspan></text>
+    <text class="cls-1" transform="translate(577.27 415.53)"><tspan x="0" y="0">松山機場</tspan></text>
+    <text class="cls-1" transform="translate(578.13 448.41)"><tspan x="0" y="0">中山國中</tspan></text>
+    <text class="cls-1" transform="translate(566.5 481.2)"><tspan x="0" y="0">南京復興</tspan></text>
+    <text class="cls-1" transform="translate(565.29 549.56)"><tspan x="0" y="0">忠孝復興</tspan></text>
+    <text class="cls-1" transform="translate(563.51 627.44)"><tspan x="0" y="0">大安</tspan></text>
+    <text class="cls-1" transform="translate(481.33 685.62)"><tspan x="0" y="0">科技大樓</tspan></text>
+    <text class="cls-1" transform="translate(593.47 729.06)"><tspan x="0" y="0">六張犁</tspan></text>
+    <text class="cls-1" transform="translate(663.39 729.09)"><tspan x="0" y="0">麟光</tspan></text>
+    <text class="cls-1" transform="translate(738.88 735.99)"><tspan x="0" y="0">辛亥</tspan></text>
+    <text class="cls-1" transform="translate(738.79 771.65)"><tspan x="0" y="0">萬芳醫院</tspan></text>
+    <text class="cls-1" transform="translate(738.79 806.82)"><tspan x="0" y="0">萬芳社區</tspan></text>
+    <text class="cls-1" transform="translate(732.41 866.76)"><tspan x="0" y="0">木柵</tspan></text>
+    <text class="cls-1" transform="translate(776.12 866.76)"><tspan x="0" y="0">動物園</tspan></text>
+  </g>
+</svg>
