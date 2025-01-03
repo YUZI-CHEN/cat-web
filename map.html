@@ -36,34 +36,42 @@
 
       <!-- map區 -->
       <section id="map">
-        <div id="mrt">
-          <img src="./img/mrt.svg" alt="捷運圖">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="mrt-svg">
+          <!-- 背景 -->
+          <image href="./img/mrt.svg" x="0" y="0" width="100%" height="100%" class="bg" />
 
-        </div>
-        <div id="red-line" class="line">
-          <img src="./img/freshwater.png" alt="淡水線">
-        </div>
-        <div id="blue-line" class="line">
-          <img src="./img/bannan.svg" alt="板南線">
+          <!-- 淡水線 (紅線) -->
+          <g id="red-line">
+            <image href="./img/freshwater.svg" class="line"/>
+              <!-- 站點 -->
+              <image class="Xinbeitou point" data-name="新北投" href="./img/MAP-點.svg"/>
+          </g>
 
-        </div>
-        <div id="orange-line" class="line">
-          <img src="./img/luzhou.svg" alt="蘆洲線">
-        </div>
-        <div id="yellow-line" class="line">
-          <img src="./img/newTaipei.svg" alt="新北線">
-        </div>
-        <div id="brown-line" class="line">
-          <img src="./img/nucha.svg" alt="">
-        </div>
+          <!-- 板南線 (藍線) -->
+          <g id="blue-line">
+            <image href="./img/bannan.svg" class="line">
+          </g>
 
-        <div id="green-line" class="line">
-          <img src="./img/xindian.svg" alt="">
-        </div>
+          <!-- 中和新蘆線 (橙線) -->
+          <g id="orange-line">
+            <image href="./img/luzhou.svg" class="line">
+          </g>
 
-        <div  id="">
+          <!-- 環狀線 (黃線) -->
+          <g id="yellow-line">
+            <image href="./img/newTaipei.svg" class="line">
+          </g>
 
-        </div>
+          <!-- 文湖線 (棕線) -->
+          <g id="brown-line">
+            <image href="./img/nucha.svg" class="line">
+          </g>
+
+          <!-- 新店線 (綠線) -->
+          <g id="green-line">
+            <image href="./img/xindian.svg" class="line">
+          </g>
+        </svg>
       </section>
     </main>
     <script src="./js/nav.js"></script>

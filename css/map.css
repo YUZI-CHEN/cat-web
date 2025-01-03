@@ -1,4 +1,56 @@
 @charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* 重置標題字重 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* 重置清單符號 */
+ol, ul {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連接 */
+a {
+  display: block; /* 將a預設inline改為block，才能設定間距及寬高 */
+  color: #222;
+  text-decoration: none;
+}
+
+/* reset end */
 main {
   width: 80%;
   height: 100%;
@@ -60,92 +112,72 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mrt-svg {
+  /* 圖片容器的寬度，可根據需求設置 */
+  max-width: 100%;
+  height: auto;
+  margin: 50px;
   position: relative;
 }
-#map .line {
-  display: none;
+
+.bg {
+  opacity: 0.8;
 }
 
-#mrt {
-  width: 100%;
+#red-line .line {
+  opacity: 0;
+  width: 689px;
   height: auto;
-  margin-top: 100px;
+  x: 70px;
+  y: 0px;
 }
-#mrt img {
-  opacity: 0.5;
-  width: 100%;
-  height: 780px;
+#red-line .point {
+  width: 28px;
+  height: 28px;
 }
-
-#red-line {
-  position: absolute;
-  width: 540px;
-  height: auto;
-  top: 98px;
-  left: 120px;
-}
-#red-line img {
-  opacity: 1;
-  width: 100%;
-  height: auto;
+#red-line .Xinbeitou {
+  x: 110px;
+  y: 0px;
 }
 
-#blue-line {
-  position: absolute;
-  width: 694px;
+#blue-line .line {
+  opacity: 0;
+  width: 888.5px;
   height: auto;
-  top: 448px;
-  left: 136px;
-}
-#blue-line img {
-  width: 100%;
-  height: auto;
+  x: 90.25px;
+  y: 447.15px;
 }
 
-#orange-line {
-  position: absolute;
-  width: 420px;
+#orange-line .line {
+  opacity: 0;
+  width: 544.65px;
   height: auto;
-  top: 280px;
-  left: 73px;
-}
-#orange-line img {
-  width: 100%;
-  height: auto;
+  x: 3.9px;
+  y: 227.7px;
 }
 
-#yellow-line {
-  position: absolute;
-  width: 507px;
+#yellow-line .line {
+  opacity: 0;
+  width: 650px;
   height: auto;
-  top: 476px;
-  left: 82px;
-}
-#yellow-line img {
-  width: 100%;
-  height: auto;
+  x: 19px;
+  y: 482px;
 }
 
-#brown-line {
-  position: absolute;
-  width: 394px;
+#brown-line .line {
+  opacity: 0;
+  width: 504.6px;
   height: auto;
-  top: 295.5px;
-  right: 70px;
-}
-#brown-line img {
-  width: 100%;
-  height: auto;
+  x: 490.3px;
+  y: 252px;
 }
 
-#green-line {
-  position: absolute;
-  width: 408px;
+#green-line .line {
+  opacity: 0;
+  width: 525.4px;
   height: auto;
-  top: 469px;
-  left: 250px;
-}
-#green-line img {
-  width: 100%;
-  height: auto;
+  x: 233px;
+  y: 471px;
 }/*# sourceMappingURL=map.css.map */

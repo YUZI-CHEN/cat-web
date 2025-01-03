@@ -1,0 +1,468 @@
+#search-points {
+
+  // display: none;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  // 新店線
+  .green-points {
+
+    .Songshan {
+      position: absolute;
+      top: 10px;
+      right: 260px;
+    }
+
+    .Nanjing-Sanmin {
+      position: absolute;
+      top: 480px;
+      right: 310px;
+    }
+
+    .Taipei-Arena {
+      position: absolute;
+      top: 480px;
+      right: 345px;
+    }
+
+    .Nanjing-Fuxing {
+      position: absolute;
+      top: 480px;
+      right: 400px;
+    }
+
+    .Songjiang-Nanjing {
+      position: absolute;
+      top: 480px;
+      right: 475px;
+    }
+
+    .Zhongshan {
+      position: absolute;
+      top: 480px;
+      right: 550px;
+    }
+
+    .Beimen {
+      position: absolute;
+      top: 494px;
+      right: 605px;
+    }
+
+    .Ximen {
+      position: absolute;
+      top: 535px;
+      right: 605px;
+    }
+
+    .Xiaonanmen {
+      position: absolute;
+      bottom: 275px;
+      right: 605px;
+    }
+
+    .Chian-Kai-Shek {
+      position: absolute;
+      bottom: 263px;
+      right: 565px;
+    }
+
+    .Guting {
+      position: absolute;
+      bottom: 235px;
+      right: 525px;
+    }
+
+    .Taipower-Building {
+      position: absolute;
+      bottom: 205px;
+      right: 490px;
+    }
+
+    .Gongguan {
+      position: absolute;
+      bottom: 180px;
+      right: 465px;
+
+    }
+
+    .Wanlong {
+      position: absolute;
+      bottom: 160px;
+      right: 440px;
+    }
+
+    .Jingmei {
+      position: absolute;
+      bottom: 140px;
+      right: 415px;
+    }
+
+    .Dapinglin {
+      position: absolute;
+      bottom: 105px;
+      right: 385px;
+    }
+
+    .Qizhang {
+      position: absolute;
+      bottom: 70px;
+      right: 383px;
+    }
+
+    .Xindian-District-Office {
+      position: absolute;
+      bottom: 36px;
+      right: 383px;
+    }
+
+    .Xindian {
+      position: absolute;
+      bottom: 5px;
+      right: 383px;
+    }
+
+  }
+
+  .red-points {
+    .Xinbeitou {
+      position: absolute;
+      top: 170px;
+      left: 243px;
+    }
+
+    .Danshui {
+      position: absolute;
+      top: 95px;
+      left: 152px;
+    }
+
+    .Hongshulin {
+      position: absolute;
+      top: 130px;
+      left: 152px;
+    }
+
+    .Zhuwei {
+      position: absolute;
+      top: 160px;
+      left: 152px;
+    }
+
+    .Guandu {
+      position: absolute;
+      top: 190px;
+      left: 152px;
+    }
+
+    .Zhongyi {
+      position: absolute;
+      top: 215px;
+      left: 170px;
+    }
+
+    .Fuzinggang {
+      position: absolute;
+      top: 215px;
+      left: 210px;
+    }
+
+    .Beitou {
+      position: absolute;
+      top: 214px;
+      left: 240px;
+    }
+
+    .Qiyan {
+      position: absolute;
+      top: 214px;
+      left: 275px;
+    }
+
+    .Qilian {
+      position: absolute;
+      top: 214px;
+      left: 310px;
+    }
+
+    .Shipai {
+      position: absolute;
+      top: 235px;
+      left: 340px;
+    }
+
+    .Mingde {
+      position: absolute;
+      top: 265px;
+      left: 340px;
+    }
+
+    .Zhishan {
+      position: absolute;
+      top: 295px;
+      left: 340px;
+    }
+
+    .Shilin {
+      position: absolute;
+      top: 320px;
+      left: 340px;
+    }
+
+    .Jiantan {
+      position: absolute;
+      top: 350px;
+      left: 340px;
+    }
+
+    .Yuanshan {
+      position: absolute;
+      top: 385px;
+      left: 340px;
+    }
+
+    .Minquan {
+      position: absolute;
+      top: 420px;
+      left: 340px;
+    }
+
+    .Shuanglian {
+      position: absolute;
+      top: 455px;
+      left: 340px;
+    }
+
+    .Zhongshan {
+      position: absolute;
+      top: 480px;
+      right: 564px;
+
+    }
+
+    .Taipei-Main {
+      position: absolute;
+      bottom: 328px;
+      right: 564px;
+    }
+
+    .NTUH {
+      position: absolute;
+      bottom: 295px;
+      right: 564px;
+    }
+
+    .Chian-Kai-Shek {
+      position: absolute;
+      bottom: 267px;
+      right: 564px;
+    }
+
+    .Dongmen {
+      position: absolute;
+      bottom: 263px;
+      right: 495px;
+    }
+
+    .Daan-Park {
+      position: absolute;
+      bottom: 263px;
+      right: 450px;
+    }
+
+    .Daan {
+      position: absolute;
+      bottom: 263px;
+      right: 410px;
+    }
+
+    .Xinyi-Anhe {
+      position: absolute;
+      bottom: 263px;
+      right: 355px;
+    }
+
+    .Taipei101 {
+      position: absolute;
+      bottom: 263px;
+      right: 315px;
+    }
+
+    .Xiangshan {
+      position: absolute;
+      bottom: 263px;
+      right: 275px;
+    }
+  }
+
+  // 板南線
+  .blue-points {
+    .Nangang-Exhibition {
+      position: absolute;
+      bottom: 416px;
+      right: 158px;
+    }
+
+    .Nangang {
+      position: absolute;
+      bottom: 380px;
+      right: 170px;
+    }
+
+    .Kunyang {
+      position: absolute;
+      bottom: 350px;
+      right: 170px;
+    }
+
+    .Houshanpi {
+      position: absolute;
+      bottom: 328px;
+      right: 195px;
+    }
+
+    .Yongchun {
+      position: absolute;
+      bottom: 328px;
+      right: 235px;
+    }
+
+    .TCH {
+      position: absolute;
+      bottom: 328px;
+      right: 280px;
+    }
+
+    .Memorial-Hall {
+      position: absolute;
+      bottom: 328px;
+      right: 320px;
+    }
+
+    .Zhongxiao-Dunhua {
+      position: absolute;
+      bottom: 328px;
+      right: 360px;
+    }
+
+    .Zhongxiao-Fuxing {
+      position: absolute;
+      bottom: 328px;
+      right: 405px;
+    }
+
+    .Zhongxiao-Xinsheng {
+      position: absolute;
+      bottom: 328px;
+      left: 417px;
+    }
+
+    .Shandao-Temple {
+      position: absolute;
+      bottom: 328px;
+      left: 380px;
+    }
+
+    .Taipei-Main {
+      position: absolute;
+      bottom: 328px;
+      right: 564px;
+    }
+
+    .Ximen {
+      position: absolute;
+      bottom: 328px;
+      left: 85px;
+    }
+
+    .Longshan-Temple {
+      position: absolute;
+      bottom: 328px;
+      left: 222px;
+    }
+
+    .Jiangzicui {
+      position: absolute;
+      bottom: 296px;
+      left: 194px;
+    }
+
+    .Xinpu {
+      position: absolute;
+      bottom: 265px;
+      left: 194px;
+    }
+
+    .Banciao {
+      position: absolute;
+      bottom: 230px;
+      left: 194px;
+    }
+
+    .Fuzhong {
+      position: absolute;
+      bottom: 199px;
+      left: 194px;
+    }
+
+    .FEH {
+      position: absolute;
+      bottom: 168px;
+      left: 194px;
+    }
+
+    .Haishan {
+      position: absolute;
+      bottom: 135px;
+      left: 194px;
+    }
+
+    .Tucheng {
+      position: absolute;
+      bottom: 103px;
+      left: 194px;
+    }
+
+    .Yongning {
+      position: absolute;
+      bottom: 75px;
+      left: 194px;
+    }
+
+    .Dingpu {
+      position: absolute;
+      bottom: 45px;
+      left: 194px;
+    }
+
+  }
+
+  // 文湖線
+  .brown-points {
+    .Nangang-Exhibition {
+      position: absolute;
+      bottom: 416px;
+      right: 158px;
+    }
+
+    .Nangang-Software-park {
+      position: absolute;
+      bottom: 450px;
+      right: 158px;
+    }
+
+    .Donghu {
+      position: absolute;
+      bottom: 480px;
+      right: 158px;
+    }
+
+    .Huzhou {
+      position: absolute;
+    }
+
+  }
+}
