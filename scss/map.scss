@@ -78,6 +78,7 @@ main {
   align-items: center;
   justify-content: center;
 
+
 }
 
 .mrt-svg {
@@ -90,79 +91,766 @@ main {
   margin: 50px;
   position: relative;
 
-
+  .point {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .bg {
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 #red-line {
- 
+
   .line {
-    opacity:0;
+    opacity: 0;
     width: 689px;
     height: auto;
     x: 70px;
     y: 0px;
   }
-  .point{
-    width: 28px;
-    height: 28px;
+
+
+
+  .Xinbeitou {
+    x: 230px;
+    y: 88px;
   }
-  .Xinbeitou{
-    x: 110px;
+
+  .Danshui {
+    x: 115px;
     y: 0px;
   }
-  
+
+  .Hongshulin {
+    x: 115px;
+    y: 40px;
+  }
+
+  .Zhuwei {
+    x: 115px;
+    y: 75px;
+  }
+
+  .Guandu {
+    x: 115px;
+    y: 115px;
+  }
+
+  .Zhongyi {
+    x: 140px;
+    y: 145px;
+  }
+
+  .Fuzinggang {
+    x: 185px;
+    y: 145px;
+  }
+
+  .Beitou {
+    x: 230px;
+    y: 145px;
+  }
+
+  .Qiyan {
+    x: 275px;
+    y: 145px;
+  }
+
+  .Qilian {
+    x: 320px;
+    y: 145px;
+  }
+
+  .Shipai {
+    x: 355px;
+    y: 170px;
+  }
+
+  .Mingde {
+    x: 355px;
+    y: 210px;
+  }
+
+  .Zhishan {
+    x: 355px;
+    y: 250px;
+  }
+
+  .Shilin {
+    x: 355px;
+    y: 290px;
+  }
+
+  .Jiantan {
+    x: 355px;
+    y: 325px;
+  }
+
+  .Yuanshan {
+    x: 355px;
+    y: 365px;
+  }
+
+  .Minquan {
+    x: 355px;
+    y: 410px;
+  }
+
+  .Shuanglian {
+    x: 355px;
+    y: 450px;
+  }
+
+  .Zhongshan {
+    x: 355px;
+    y: 486px;
+  }
+
+  .Taipei-Main {
+    x: 355px;
+    y: 555px;
+  }
+
+  .NTUH {
+    x: 355px;
+    y: 600px;
+  }
+
+  .Chian-Kai-Shek {
+    x: 355px;
+    y: 635px;
+  }
+
+  .Dongmen {
+    x: 445px;
+    y: 635px;
+  }
+
+  .Daan-Park {
+    x: 500px;
+    y: 635px;
+  }
+
+  .Daan {
+    x: 560px;
+    y: 635px;
+  }
+
+  .Xinyi-Anhe {
+    x: 620px;
+    y: 635px;
+  }
+
+  .Taipei101 {
+    x: 676px;
+    y: 635px;
+  }
+
+  .Xiangshan {
+    x: 726px;
+    y: 635px;
+  }
 
 }
 
-#blue-line{
-  .line{
-    opacity:0;
+// 板南線 (藍線)
+#blue-line {
+  .line {
+    opacity: 0;
     width: 888.5px;
     height: auto;
     x: 90.25px;
     y: 447.15px;
   }
+
+  .Nangang-Exhibition {
+    x: 858px;
+    y: 445px;
+  }
+
+  .Nangang {
+
+    x: 858px;
+    y: 483px;
+  }
+
+  .Kunyang {
+    x: 858px;
+    y: 525px;
+  }
+
+  .Houshanpi {
+    x: 830px;
+    y: 556px;
+  }
+
+  .Yongchun {
+    x: 775px;
+    y: 556px;
+  }
+
+  .TCH {
+    x: 720px;
+    y: 556px;
+  }
+
+  .Memorial-Hall {
+    x: 670px;
+    y: 556px;
+  }
+
+  .Zhongxiao-Dunhua {
+    x: 620px;
+    y: 556px;
+  }
+
+  .Zhongxiao-Fuxing {
+    x: 550px;
+    y: 556px;
+  }
+
+  .Zhongxiao-Xinsheng {
+    x: 455px;
+    y: 556px;
+  }
+
+  .Shandao-Temple {
+    x: 410px;
+    y: 556px;
+  }
+
+  .Taipei-Main {
+    x: 355px;
+    y: 555px;
+  }
+
+  .Ximen {
+    x: 285px;
+    y: 555px;
+  }
+
+  .Longshan-Temple {
+    x: 210px;
+    y: 555px;
+  }
+
+  .Jiangzicui {
+    x: 160px;
+    y: 595px;
+  }
+
+  .Xinpu {
+    x: 160px;
+    y: 640px;
+  }
+
+  .Banciao {
+    x: 160px;
+    y: 685px;
+  }
+
+  .Fuzhong {
+    x: 160px;
+    y: 730px;
+  }
+
+  .FEH {
+    x: 160px;
+    y: 765px;
+  }
+
+  .Haishan {
+    x: 160px;
+    y: 805px;
+  }
+
+  .Tucheng {
+    x: 160px;
+    y: 845px;
+  }
+
+  .Yongning {
+    x: 160px;
+    y: 885px;
+  }
+
+  .Dingpu {
+    x: 160px;
+    y: 925px;
+  }
+
 }
 
-#orange-line{
-  .line{
-    opacity:0;
+//  中和新蘆線 (橙線) 
+#orange-line {
+  .line {
+    opacity: 0;
     width: 544.65px;
     height: auto;
     x: 3.9px;
     y: 227.7px;
   }
+
+  .Luzhou {
+    x: 150px;
+    y: 225px;
+  }
+
+  .SSHS {
+    x: 150px;
+    y: 275px;
+  }
+
+  .IHS {
+    x: 150px;
+    y: 320px;
+  }
+
+  .SJHS {
+    x: 175px;
+    y: 355px;
+  }
+
+  .SES {
+    x: 210px;
+    y: 380px;
+  }
+
+  .Huilong {
+    x: 5px;
+    y: 740px;
+  }
+
+  .Danfeng {
+    x: 5px;
+    y: 700px;
+  }
+
+  .FJU {
+    x: 5px;
+    y: 655px;
+  }
+
+  .Xinzhuang {
+    x: 5px;
+    y: 615px;
+  }
+
+  .Touqianzhuang {
+    x: 45px;
+    y: 575px;
+  }
+
+  .Xianse-Temple {
+    x: 90px;
+    y: 535px;
+  }
+
+  .Sanchong {
+    x: 135px;
+    y: 500px;
+  }
+
+  .Cailiao {
+    x: 170px;
+    y: 470px;
+  }
+
+  .Taipei-Bridge {
+    x: 210px;
+    y: 438px;
+  }
+
+  .Daqiaotou {
+    x: 280px;
+    y: 410px;
+  }
+
+  .Minquan {
+    x: 355px;
+    y: 410px;
+  }
+
+  .ZES {
+    x: 425px;
+    y: 410px;
+  }
+
+  .Xingtian-Temple {
+
+    x: 455px;
+    y: 440px;
+  }
+
+  .Songjiang-Nanjing {
+    x: 455px;
+    y: 485px;
+  }
+
+  .Zhongxiao-Xinsheng {
+    x: 455px;
+    y: 556px;
+  }
+
+  .Dongmen {
+    x: 445px;
+    y: 635px;
+  }
+
+  .Guting {
+    x: 400px;
+    y: 670px;
+  }
+
+  .Dingxi {
+    x: 380px;
+    y: 715px;
+  }
+
+  .Yongan-Market {
+    x: 380px;
+    y: 755px;
+
+  }
+
+  .Jingan {
+    x: 380px;
+    y: 795px;
+  }
+
+  .Nanshijiao {
+    x: 380px;
+    y: 840px;
+  }
+
+
+
 }
 
-#yellow-line{
-  .line{
-    opacity:0;
+// 環狀線 (黃線) 
+#yellow-line {
+  .line {
+    opacity: 0;
     width: 650px;
     height: auto;
     x: 19px;
     y: 482px;
   }
-  
+
+  .NTIP {
+    x: 15px;
+    y: 495px;
+  }
+
+  .Xingfu {
+    x: 18px;
+    y: 535px;
+  }
+
+  .Touqianzhuang {
+    x: 45px;
+    y: 575px;
+  }
+
+  .Xinpu-Minsheng {
+    x: 128px;
+    y: 640px;
+  }
+
+  .Banciao {
+    x: 160px;
+    y: 685px;
+  }
+
+  .Banxin {
+    x: 220px;
+    y: 710px;
+  }
+
+  .Zhongyuan {
+    x: 250px;
+    y: 740px;
+  }
+
+  .Qiaohe {
+    x: 290px;
+    y: 775px;
+  }
+
+  .Zhonghe {
+    x: 325px;
+    y: 800px;
+  }
+
+  .Jingan {
+    x: 380px;
+    y: 795px;
+  }
+
+  .Jingping {
+    x: 440px;
+    y: 800px;
+  }
+
+  .Xiulang-Bridge {
+    x: 480px;
+    y: 820px;
+  }
+
+  .Shisizhang {
+    x: 525px;
+    y: 840px;
+  }
+
+  .Dapinglin {
+    x: 585px;
+    y: 835px;
+  }
+
 }
-#brown-line{
-  .line{
-    opacity:0;
+
+
+
+//  文湖線 (棕線)
+#brown-line {
+  .line {
+    opacity: 0;
     width: 504.6px;
     height: auto;
     x: 490.3px;
     y: 252px;
   }
+
+  .Nangang-Exhibition {
+    x: 858px;
+    y: 445px;
+  }
+
+  .Nangang-Software-park {
+    x: 858px;
+    y: 400px;
+  }
+
+  .Donghu {
+    x: 858px;
+    y: 358px;
+  }
+
+  .Huzhou {
+    x: 858px;
+    y: 310px;
+  }
+
+  .Dahu-Park {
+
+    x: 810px;
+    y: 310px;
+  }
+
+  .Neihu {
+    x: 755px;
+    y: 310px;
+  }
+
+  .Wende {
+    x: 710px;
+    y: 310px;
+  }
+
+  .Gangqian {
+    x: 660px;
+    y: 310px;
+  }
+
+  .Xihu {
+    x: 610px;
+    y: 310px;
+  }
+
+  .Jiannang-Rd {
+    x: 555px;
+    y: 310px;
+  }
+
+  .Dazhi {
+    x: 553px;
+    y: 360px;
+  }
+
+  .Songshan-Airport {
+    x: 553px;
+    y: 400px;
+  }
+
+  .ZJHS {
+    x: 553px;
+    y: 440px;
+  }
+
+  .Nanjing-Fuxing {
+    x: 550px;
+    y: 485px;
+  }
+
+  .Zhongxiao-Fuxing {
+    x: 550px;
+    y: 556px;
+  }
+
+  .Daan {
+    x: 560px;
+    y: 635px;
+  }
+
+  .Technology-Building {
+    x: 555px;
+    y: 675px;
+
+  }
+
+  .Liuzhanli {
+    x: 615px;
+    y: 690px;
+  }
+
+  .Linguang {
+    x: 680px;
+    y: 690px;
+  }
+
+  .Xinhai {
+    x: 710px;
+    y: 720px;
+  }
+
+  .WH {
+    x: 710px;
+    y: 760px;
+  }
+
+  .WC {
+    x: 710px;
+    y: 795px;
+  }
+
+  .Muzha {
+    x: 745px;
+    y: 825px;
+  }
+
+  .Zoo {
+    x: 795px;
+    y: 825px;
+  }
+
 }
-#green-line{
-  .line{
-    opacity:0;
+
+// 新店線
+#green-line {
+  .line {
+    opacity: 0;
     width: 525.4px;
     height: auto;
     x: 233px;
     y: 471px;
   }
+
+  .Songshan {
+    x: 730px;
+    y: 485px;
+  }
+
+  .Nanjing-Sanmin {
+    x: 670px;
+    y: 485px;
+  }
+
+  .Taipei-Arena {
+    x: 620px;
+    y: 485px;
+  }
+
+  .Nanjing-Fuxing {
+    x: 550px;
+    y: 485px;
+  }
+
+  .Songjiang-Nanjing {
+    x: 455px;
+    y: 485px;
+  }
+
+  .Zhongshan {
+    x: 355px;
+    y: 486px;
+  }
+
+  .Beimen {
+    x: 285px;
+    y: 505px;
+  }
+
+  .Ximen {
+    x: 285px;
+    y: 555px;
+  }
+
+  .Xiaonanmen {
+    x: 286px;
+    y: 620px;
+  }
+
+  .Chian-Kai-Shek {
+    x: 355px;
+    y: 635px;
+  }
+
+  .Guting {
+    x: 400px;
+    y: 670px;
+  }
+
+  .Taipower-Building {
+    x: 445px;
+    y: 705px;
+  }
+
+  .Gongguan {
+    x: 480px;
+    y: 735px;
+  }
+
+  .Wanlong {
+    x: 510px;
+    y: 765px;
+  }
+
+  .Jingmei {
+    x: 545px;
+    y: 795px;
+  }
+
+  .Dapinglin {
+    x: 585px;
+    y: 835px;
+  }
+
+  .Qizhang {
+    x: 585px;
+    y: 885px;
+  }
+
+  .Xindian-District-Office {
+    x: 585px;
+    y: 925px;
+  }
+
+  .Xindian {
+    x: 585px;
+    y: 965px;
+  }
+
+
 }
