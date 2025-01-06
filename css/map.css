@@ -161,7 +161,7 @@ main {
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 .bg.dimmed {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 #red-line .line {
