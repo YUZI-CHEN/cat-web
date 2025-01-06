@@ -17,7 +17,7 @@
 
 function openCity(evt, cityName) {
   // 隱藏所有 tabcontent
-  const tabcontent = document.querySelectorAll(".tabcontent");
+  const tabcontent = document.querySelectorAll(".search");
   tabcontent.forEach(content => (content.style.display = "none"));
 
   // 移除所有按鈕的 active 樣式

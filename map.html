@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/map.min.css">
+   
   </head>
 
   <body>
@@ -14,19 +15,26 @@
       <section id="search-box">
 
 
+    
+
         <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">捷運線</button>
+          <button class="tablinks" onclick="openCity(event, 'search-line')" id="defaultOpen">捷運線</button>
           <button class="tablinks" onclick="openCity(event, 'Paris')">標籤搜尋</button>
 
         </div>
 
-        <div id="London" class="tabcontent">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+        <div id="search-line" class="search">
+          <h3>選擇捷運線<h3>
+          <span class="tag"   onclick="toggleTag(this)" data-line-id="red-line"  data-tag="淡水線">淡水線</span>
+          <span class="tag" onclick="toggleTag(this)" data-line-id="blue-line"  data-tag="板南線">板南線</span>
+          <span class="tag" onclick="toggleTag(this)" data-line-id="orange-line"  data-tag="中和新蘆線">中和新蘆線</span>
+          <span class="tag" onclick="toggleTag(this)" data-line-id="yellow-line" data-tag="環狀線">環狀線</span>
+          <span class="tag" onclick="toggleTag(this)" data-line-id="brown-line"  data-tag="文湖線">文湖線</span>
+          <span class="tag" onclick="toggleTag(this)" data-line-id="green-line" data-tag="新店線">新店線</span>
         </div>
 
-        <div id="Paris" class="tabcontent">
-          <h3>Paris</h3>
+        <div id="Paris" class="search">
+          <h3>選擇標籤</h3>
           <p>Paris is the capital of France.</p>
         </div>
 
@@ -35,14 +43,14 @@
       </section>
 
       <!-- map區 -->
-      <section id="map">
+      <section id="map"  >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="mrt-svg">
           <!-- 背景 -->
-          <image href="./img/mrt.svg" x="0" y="0" width="100%" height="100%" class="bg" />
+          <image href="./img/mrt.svg" x="0" y="0" width="100%" height="100%" class="bg  dimmed" />
 
           <!-- 淡水線 (紅線) -->
-          <g id="red-line">
-            <image href="./img/freshwater.svg" class="line" />
+          <g id="red-line" class="line-group">
+            <image href="./img/freshwater.svg" class="line"  data-tag="淡水線"/>
             <!-- 站點 -->
             <image class="Xinbeitou point" data-name="新北投" href="./img/MAP-點.svg" />
             <image class="Danshui point" data-name="淡水" href="./img/MAP-點.svg" />
@@ -77,8 +85,8 @@
           </g>
 
           <!-- 板南線 (藍線) -->
-          <g id="blue-line">
-            <image href="./img/bannan.svg" class="line" />
+          <g id="blue-line" class="line-group">
+            <image href="./img/bannan.svg" class="line" data-tag="板南線"/>
             <!-- 站點 -->
             <image class="Nangang-Exhibition point" data-name="南港展覽館" href="./img/MAP-點.svg" />
             <image class="Nangang point" data-name="南港" href="./img/MAP-點.svg" />
@@ -106,8 +114,8 @@
           </g>
 
           <!-- 中和新蘆線 (橙線) -->
-          <g id="orange-line">
-            <image href="./img/luzhou.svg" class="line"/>
+          <g id="orange-line"class="line-group" >
+            <image href="./img/luzhou.svg" class="line" data-tag="中和新蘆線"/>
             <image class="Luzhou point" data-name="蘆洲" href="./img/MAP-點.svg" />
             <image class="SSHS point" data-name="三民高中" href="./img/MAP-點.svg" />
             <image class="IHS point" data-name="徐匯中學" href="./img/MAP-點.svg" />
@@ -141,8 +149,8 @@
           </g>
 
           <!-- 環狀線 (黃線) -->
-          <g id="yellow-line">
-            <image href="./img/newTaipei.svg" class="line" />
+          <g id="yellow-line" class="line-group">
+            <image href="./img/newTaipei.svg" class="line" data-tag="環狀線"/>
             <image class="NTIP point" data-name="新北產業園區" href="./img/MAP-點.svg" />
             <image class="Xingfu point" data-name="幸福" href="./img/MAP-點.svg" />
             <image class="Touqianzhuang point" data-name="頭前庄" href="./img/MAP-點.svg" />
@@ -161,8 +169,8 @@
           </g>
 
           <!-- 文湖線 (棕線) -->
-          <g id="brown-line">
-            <image href="./img/nucha.svg" class="line" />
+          <g id="brown-line" class="line-group">
+            <image href="./img/nucha.svg" class="line" data-tag="文湖線"/>
             <image class="Nangang-Exhibition point" data-name="南港展覽館" href="./img/MAP-點.svg" />
             <image class="Nangang-Software-park point" data-name="南港軟體園區" href="./img/MAP-點.svg" />
             <image class="Donghu point" data-name="東湖" href="./img/MAP-點.svg" />
@@ -192,8 +200,8 @@
           </g>
 
           <!-- 新店線 (綠線) -->
-          <g id="green-line">
-            <image href="./img/xindian.svg" class="line" />
+          <g id="green-line" class="line-group">
+            <image href="./img/xindian.svg" class="line" data-tag="新店線"/>
             <image class="Songshan point" data-name="松山" href="./img/MAP-點.svg" />
             <image class="Nanjing-Sanmin point" data-name="南京三民" href="./img/MAP-點.svg" />
             <image class="Taipei-Arena point" data-name="台北小巨蛋" href="./img/MAP-點.svg" />
@@ -218,6 +226,8 @@
       </section>
     </main>
     <script src="./js/nav.js"></script>
+    <script src="./js/search-tab.js"></script>
+    <script src="./js/toggle-line.js"></script>
   </body>
 
 </html>
