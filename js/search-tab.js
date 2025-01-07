@@ -1,85 +1,37 @@
 
-// // 切換背景的暗淡狀態
-// function toggleDimBackground(isDimmed) {
-//   const bgElement = document.querySelector('.bg');
-//   bgElement.classList.toggle('dimmed', isDimmed);
-// }
+function toggleLine(lineId) {
+  // 隱藏所有捷運線
+  const lines = document.querySelectorAll('.line-group');
+  lines.forEach(line => line.classList.remove('active'));
 
-// // 切換標籤選中狀態
-// function toggleTag(tagElement) {
-//   const isSelected = tagElement.classList.toggle('selected');
-//   const lineId = tagElement.getAttribute('data-line-id');
-
-//   // 檢查是否有任何標籤被選中
-//   const anyTagSelected = document.querySelectorAll('.tag.selected').length > 0;
-
-//   // 切換背景暗淡狀態
-//   toggleDimBackground(anyTagSelected);
-
-//   // 顯示或隱藏對應的捷運線
-//   toggleLine(isSelected ? lineId : null);
-// }
-
-// // 切換顯示或隱藏捷運線
-// function toggleLine(lineId) {
-//   const lines = document.querySelectorAll('.line-group');
-//   lines.forEach(line => line.classList.remove('active'));
-
-//   if (lineId) {
-//     const selectedLine = document.getElementById(lineId);
-//     if (selectedLine) {
-//       selectedLine.classList.add('active');
-//     }
-//   }
-// }
-
-// // 等待 DOM 加載完成後設置背景初始透明度
-// document.addEventListener('DOMContentLoaded', () => {
-//   const bgElement = document.querySelector('.bg');
-//   bgElement.style.opacity = '1'; // 明確設置初始透明度
-// });
-// 切換背景的暗淡狀態
-function toggleDimBackground(isDimmed) {
-  const bgElement = document.querySelector('.bg');
-  if (bgElement) {
-    // 使用 classList.toggle，確保正確添加或移除 dimmed 類
-    bgElement.classList.toggle('dimmed', isDimmed);
+  // 如果選中的捷運線已經顯示，則隱藏它；否則顯示
+  const selectedLine = document.getElementById(lineId);
+  if (selectedLine && !selectedLine.classList.contains('active')) {
+    selectedLine.classList.add('active');
   }
 }
 
-// 切換標籤選中狀態
+function toggleDimBackground(isDimmed) {
+  const bgElement = document.querySelector('.bg');
+  if (isDimmed) {
+    bgElement.classList.add('dimmed');
+  } else {
+    bgElement.classList.remove('dimmed');
+  }
+}
+
 function toggleTag(tagElement) {
   const isSelected = tagElement.classList.toggle('selected');
   const lineId = tagElement.getAttribute('data-line-id');
 
-  // 檢查是否有任何標籤被選中
-  const anyTagSelected = document.querySelectorAll('.tag.selected').length > 0;
-
   // 切換背景暗淡狀態
-  toggleDimBackground(anyTagSelected);
+  toggleDimBackground(isSelected);
 
-  // 顯示或隱藏對應的捷運線
-  toggleLine(isSelected ? lineId : null);
-}
-
-// 切換顯示或隱藏捷運線
-function toggleLine(lineId) {
-  const lines = document.querySelectorAll('.line-group');
-  lines.forEach(line => line.classList.remove('active'));
-
-  if (lineId) {
-    const selectedLine = document.getElementById(lineId);
-    if (selectedLine) {
-      selectedLine.classList.add('active');
-      
-    }
+  // 如果選中標籤，顯示對應捷運線；否則隱藏所有
+  if (isSelected) {
+    toggleLine(lineId);
+  } else {
+    toggleLine(null); // 無參數，隱藏所有捷運線
   }
 }
 
-// 等待 DOM 加載完成後設置背景初始透明度
-document.addEventListener('DOMContentLoaded', () => {
-  const bgElement = document.querySelector('.bg');
-  if (bgElement) {
-    bgElement.style.opacity = '1'; // 明確設置初始透明度
-  }
-});

@@ -157,10 +157,12 @@ main {
 }
 
 .bg {
+  filter: brightness(100%);
   opacity: 1;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 .bg.dimmed {
+  filter: brightness(50%);
   opacity: 0.2;
 }
 
