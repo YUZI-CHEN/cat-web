@@ -1,0 +1,45 @@
+{
+  "red-line":[
+    {
+    "id":Guandu,
+    "station":關渡站,
+    "title":爐鍋咖啡 Luguo Cafe,
+    "time":週二 ~ 週日：12:00 ~ 20:00(週一公休),
+    "address":台北市北投區大度路三段296巷39號,
+    "tel":(02)2891-5990,
+    "web":https://www.luguocafe.com/,
+    "map":https://maps.app.goo.gl/RgXiwArRWj2KWYfL8,
+    "other":店貓、賣咖啡,
+
+  }
+  {
+    "id":Zhishan,
+    "station":芝山站,
+    "title":小貓花園 CAFE' & CATS 1998,
+    "time":週一 ~ 週日：12:00 ~ 22:00 (週二公休),
+    "address":台北市士林區福華路129號1樓,
+    "tel":(02)2835-3335,
+    "fb":https://www.facebook.com/nekocafe1998/,
+    "map":https://maps.app.goo.gl/soerTXycZ2beqbBZ8,
+    "other":禁12歲以下(國中生以下),
+
+  }
+   {
+    "id":Zhishan,
+    "station":芝山站,
+    "title":元氣貓主題餐廳,
+    "time":週二 ~ 週五：14:00 ~ 22:00 (週一公休),週日:13:00 ~ 22:00,
+    "address":台北市士林區中山北路五段829巷30號,
+    "tel":(02)2835-3336,
+    "fb":https://www.facebook.com/genkicat/,
+    "map":https://maps.app.goo.gl/RzuMPoBQSUYf2p8QA,
+    "other":主要緬因貓,12歲以下需打電話確認,
+
+  }
+  
+  ]
+    
+
+  
+
+}
