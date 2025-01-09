@@ -543,10 +543,174 @@
   ]
   "brown-line":[
     {
-      
+    "id":Dazhi,
+    "station":大直站,
+    "title":杜鵑窩咖啡,
+    "time":週一 ~ 週五：14:00 ~ 00:30(有異動請注意粉絲團)、六日：13:30 ~ 00:30,
+    "address":台北市中山區北安路458巷41弄52號,
+    "tel":(02)2533-0531, 
+    "fb":https://www.facebook.com/CUCKOOSNESTCAFE/,
+    "map":https://maps.app.goo.gl/DXPn3Xen9Q32CKE5A,
+    "other"店貓,
 
     }
+     {
+    "id":Dazhi,
+    "station":大直站,
+    "title":BreakFirst CAFE/Studio,
+    "time":週一 ~ 週五：13:00 ~ 18:00 (週一週四公休)六、日:11:00-18:00,
+    "address":台北市中山區北安路573巷15號1樓,
+    "tel":(02)2533-5648, 
+    "fb":https://www.facebook.com/breakfirst.place/,
+    "map":https://maps.app.goo.gl/9Jts7gsYC52VktcV7,
+    "other"很多貓,
+
+    }
+      {
+    "id":Songshan-Airport,
+    "station":松山機場站,
+    "title":朵朵嚐嚐貓咪中途咖啡廳,
+    "time":週二 ~ 週六：12:00 ~ 21:00 (週一公休)、週日：12:00~18:00,
+    "address":台北市松山區敦化北路222巷17-2號,
+    "tel":0989964092, 
+    "instagram":https://www.instagram.com/hiddenduoduo/#,
+    "map":https://maps.app.goo.gl/ijMe1JCTNg1ezvLG9,
+    "other"中途、禁12歲以下,
+
+    }
+     {
+    "id":Daan,
+    "station":大安站,
+    "title":曬貓咖啡,
+    "time":週一 ~ 週日：8:00 ~ 16:00(休息日看粉專),
+    "address":台北市大安區和平東路二段175巷20號1樓,
+    "tel":(02)2325-0566, 
+    "map":https://maps.app.goo.gl/CFvxQ68pFPheGJ827,
+    "other"很多貓,
+
+    }
+    {
+    "id":Muzha,
+    "station":木柵站,
+    "title":小公寓Apt. Cafe,
+    "time":週一 ~ 週日：11:00 ~ 20:00,
+    "address":台北市文山區指南路二段56號2樓號,
+    "tel":(02)2939-2790,
+    "fb":https://www.facebook.com/profile.php?id=100063801467514, 
+    "map":https://maps.app.goo.gl/LeioAoCx4WbHpuDT6,
+    "other"店貓,
+    }
+ 
   ]
+"green-line":[
+      {
+   "id":Songshan,
+    "station":松山站,
+    "title":Mahome畫畫咖啡廳,
+    "time":週一 ~ 週日：10:30 ~ 21:00、週五：9:00 ~ 21:00,
+    "address":台北市信義區松信路64號一樓,
+    "tel":0983516868,
+    "fb":https://www.facebook.com/mahome.food/, 
+    "map":https://maps.app.goo.gl/sVGFPkWhawNAkf9D9,
+    "other"店貓、狗、狐蒙,
+      }
+    {
+    "id":Nanjing-Sanmin,
+    "station":南京三民站,
+    "title":小春日和動物雜貨·咖啡,
+    "time":週一 ~ 週日：11:00 ~ 21:00,
+    "address":台北市延壽街361號1樓 (民生社區),
+    "tel":(02)8787-6920,
+    "web":https://www.springday.tw/?fbclid=Iw,
+    "fb":https://www.facebook.com/SpringDayPetShopCafe/, 
+    "map":https://maps.app.goo.gl/ngbBZWmZYCde34bY7,
+    "other"寵物美容'、寵物友善、挪威、英短、品種貓,
+     }
+     {
+    "id":Nanjing-Sanmin,
+    "station":南京三民站,
+    "title":和貓咪有約,
+    "time":週六:09:00~22:00、週日~周一:09:00~20:00、週二 ~ 週四：11:30 ~ 20:00、週五:11:30~22:00,
+    "address":台北市松山區三民路3巷21號,
+    "tel":(02)2528-1808,
+    
+    "fb":https://www.facebook.com/profile.php?id=100063914262351, 
+    "map":https://maps.app.goo.gl/UedyRKJsPQYnuknc9,
+    "other"入店需10歲,
+     }
+     {
+    "id":Guting,
+    "station":古亭站,
+    "title":貓圖咖啡,
+    "time":週一 ~ 週五：8:30 ~ 17:00、週六日：8:00 ~ 17:00,
+    "address":台北市大安區潮州街154號,
+    "tel":(02)3365-2865,
+    "fb":https://www.facebook.com/cat.jpg.cafe, 
+    "map":https://maps.app.goo.gl/WspBw213uz5b2cbQ6,
+    "other"店貓,
+     }
+     {
+    "id":Guting,
+    "station":古亭站,
+    "title":UNI CAFE,
+    "time":週一 ~ 週日：12:00 ~ 21:00,
+    "address":台北市中正區金門街15號,
+    "tel":(02)2364-0577,
+    "web":http://www.unicafestudio.com/, 
+    "map":https://maps.app.goo.gl/qnSmMzYqRqqXFvHs5,
+    "other"店貓,
+     }
+      {
+    "id":Taipower-Building,
+    "station":台電大樓站,
+    "title":UNI CAFE,
+    "time":週一 ~ 週日：12:00 ~ 21:00,
+    "address":台北市中正區金門街15號,
+    "tel":(02)2364-0577,
+    "web":http://www.unicafestudio.com/, 
+    "map":https://maps.app.goo.gl/qnSmMzYqRqqXFvHs5,
+    "other"店貓,
+     }
+     {
+
+    "id":Taipower-Building,
+    "station":台電大樓站,
+    "title":Bistro O避世所,
+    "time":週二:17:00~01:00(周一公休)、週三~週五：17:00 ~ 00:00、週日、週六：15:00 ~ 00:00,
+    "address":台北市大安區師大路49巷3號2樓,
+    "tel":(02) 2363-7170,
+    "fb":https://www.facebook.com/bistroO, 
+    "map":https://maps.app.goo.gl/qEamsHdQv1qHRvS78,
+    "other"店貓,
+     }
+      {
+
+    "id":Taipower-Building,
+    "station":台電大樓站,
+    "title":貓孩在極簡(極簡咖啡館),
+    "time":週二 ~ 週日：12:00 ~ 21:00 (週一公休),
+    "address":台北市大安區泰順街2巷42號,
+    "tel":(02)2362-9734,
+    "fb":https://www.facebook.com/profile.php?id=100061089434772,
+    "map":https://maps.app.goo.gl/nd6mVcXyaAdBXRAb8,
+    "other"很多貓,
+     }
+      {
+
+    "id":Gongguan,
+    "station":公館站,
+    "title":貓食光,
+    "time":週三 ~ 週日：12:00 ~ 20:00 (週一周二公休)週日:12:00~19:30,
+    "address":台北市大安區羅斯福路三段297-1號1樓,
+    "tel":(02)2366-0234,
+    "fb":https://www.facebook.com/profile.php?id=100063830744637,
+    "map":https://maps.app.goo.gl/1RpNYyc5doPD9tcx8,
+    "other"中途、禁12歲以下,
+     }
+
+
+
+   ]
 
   
 
