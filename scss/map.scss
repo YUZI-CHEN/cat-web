@@ -133,6 +133,7 @@ main {
     width: 30px;
     height: 30px;
     
+    
    
     &:hover {
       color: red; /* 悬停时字体变红 */
@@ -166,7 +167,7 @@ main {
 
 
   }
-
+ 
 
 
 
@@ -320,6 +321,13 @@ main {
     height: auto;
     x: 90.25px;
     y: 447.15px;
+    // 讓 blue-line 的線條不攔截點擊事件 
+    pointer-events: none;
+  }
+  .point
+  {
+    // 讓 blue-line 的點仍可被點擊（如果有點的互動需要）
+    pointer-events: auto;
   }
 
   .Nangang-Exhibition {
@@ -448,6 +456,12 @@ main {
     height: auto;
     x: 3.9px;
     y: 227.7px;
+    pointer-events: none;
+  }
+  .point
+  {
+    // 讓 blue-line 的點仍可被點擊（如果有點的互動需要）
+    pointer-events: auto;
   }
 
   .Luzhou {
@@ -594,6 +608,10 @@ main {
     height: auto;
     x: 19px;
     y: 482px;
+    pointer-events: none;
+  }
+  .point{
+    pointer-events: auto;
   }
 
   .NTIP {
@@ -678,6 +696,10 @@ main {
     height: auto;
     x: 490.3px;
     y: 252px;
+    pointer-events: none;
+  }
+  .point{
+    pointer-events: auto;
   }
 
   .Nangang-Exhibition {
@@ -812,6 +834,10 @@ main {
     height: auto;
     x: 233px;
     y: 471px;
+    pointer-events: none;
+  }
+  .point{
+    pointer-events: auto;
   }
 
   .Songshan {
@@ -912,38 +938,6 @@ main {
 
 }
 
-// 資訊框
-// .info-box {
-//   display: none;
-//   position: absolute;
-//   background: white;
-//   border: 1px solid #ccc;
-//   padding: 10px;
-//   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-//   z-index: 100;
-
-//   .close-btn {
-//     text-align: right;
-//     margin-bottom: 10px;
-//     button {
-//       cursor: pointer;
-//     }
-//   }
-
-// }
-// .visible {
-//   display: block;
-// }
-// .info-box.visible {
-//   display: block;
-// }
-// .info-box .close-btn {
-//   text-align: right;
-//   margin-bottom: 10px;
-// }
-// .info-box .close-btn button {
-//   cursor: pointer;
-// }
 
 .info-box {
   position: absolute;
@@ -951,10 +945,12 @@ main {
   right: 150px;
   background-color: white;
   border: 2px solid #7e3d3d;
-  padding: 10px 20px;
+  border-radius: 10px;
+  padding: 0 20px;
   width: 450px;
   height: auto;
   display: none;
+
 
   .icon {
     display: flex;
@@ -971,7 +967,7 @@ main {
 #infoContent{
   padding: 5px;
   max-height: 300px;  /* 你可以根据需要调整高度 */
-  
+  width: 400px;
   overflow-y: auto;   /* 使内容溢出时出现垂直滚动条 */
   .title-hr{
     border: 0;

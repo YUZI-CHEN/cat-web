@@ -199,56 +199,56 @@
     "title":"幸福肥計劃咖啡",
     "time":"周一~周二:公休、周三~周日:09:00~19:00",
     "address":"台北市南港區南港路一段171巷16號",
-    "tel:"(02)27830602",
+    "tel":"(02)27830602",
     "fb":"https://www.facebook.com/happinessfei/",
 
     "map":"https://maps.app.goo.gl/DxrBpRS5JRCFBhYz9",
     "other":"禁12歲以下",
     "tags":["禁年齡"]
 
-  }
+  } ,
   {
     "id":"Yongchun",
     "station":"永春站",
     "title":"聞山咖啡永春有貓店",
     "time":"週一 ~ 週日：12:00 ~ 22:00",
     "address":"台北市信義區忠孝東路五段372巷27弄73-1號",
-    "tel:"(02) 8789-6797",
+    "tel":"(02) 8789-6797",
     "web":"https://www.wenshanroasting.com/",
 
     "map":"https://maps.app.goo.gl/EvxwyZQ33fijs4Gm8",
     "other":"店貓",
     "tags":["店貓"]
 
-  }
+  },
   {
     "id":"TCH",
     "station":"市政府站",
     "title":"貓樂貓咖啡 信義遠百店",
     "time":"週一 ~ 週日：11:00 ~ 21:30、週五 ~ 週六：11:00 ~ 22:00",
     "address":"台北市信義區松仁路58號7樓",
-    "tel:"(02) 8786-6708",
+    "tel":"(02) 8786-6708",
     "fb":"https://www.facebook.com/catfuncafexy",
 
     "map":"https://maps.app.goo.gl/fqtFzi4HA1jVt5498",
     "other":"品種貓、禁12歲以下(緬因、布偶、挪威)",
-    "tags":["品種貓"、"禁年齡"]
+    "tags":["品種貓","禁年齡"]
 
-  }
+  },
    {
     "id":"Memorial-Hall",
     "station":"國父紀念館站",
     "title":"ToastChat",
     "time":"週一 ~ 週日：12:00 ~ 22:00",
     "address":"台北市大安區光復南路290巷58號A1樓",
-    "tel:"(02)2721-5661",
+    "tel":"(02)2721-5661",
     "fb":"https://www.facebook.com/ToastChat",
 
     "map":"https://maps.app.goo.gl/4u25LDRdSg4ppWJ57",
     "other":"禁12歲以下",
     "tags":["禁年齡"]
 
-  }
+  },
 
   {
     "id":"Zhongxiao-Xinsheng",
@@ -256,66 +256,66 @@
     "title":"咖啡實驗室",
     "time":"週一 ~ 週五：1200-1900、周六、周日:12:00~20:00",
     "address":"台北市中正區忠孝東路二段64巷6號",
-    "tel:"(02)2341-9880",
+    "tel":"(02)2341-9880",
     "fb":"https://www.facebook.com/people/%E5%92%96%E5%95%A1%E5%AF%A6%E9%A9%97%E5%AE%A4Coffee-lab/100064192833363/",
 
     "map":"https://maps.app.goo.gl/aGEaYpgyKPVjhLrw5",
     "other":"店貓",
     "tags":["店貓"]
 
-  }
+  },
    {
     "id":"Zhongxiao-Xinsheng",
     "station":"忠孝新生站",
     "title":"Take Out Burger & Cafe",
     "time":"週一~ 週五：11:00 ~ 22:30、週六 ~ 週日： 11:00 ~ 16:00、17:00 ~ 22:30",
     "address":"台北市中正區新生南路一段56巷6號",
-    "tel:"(02)2321-0020",
+    "tel":"(02)2321-0020",
    
     "map":"https://maps.app.goo.gl/DpqPRto2bMP8d1zt5",
     "other":"店貓",
     "tags":["店貓"]
 
-  }
+  },
   {
     "id":"Shandao-Temple",
     "station":"善導寺站",
     "title":"浪浪別哭",
     "time":"週一 ~ 週日：12:00 ~ 21:00",
     "address":"台北市中正區林森北路9巷13號",
-    "tel:"(02) 2356-0766",
+    "tel":"(02) 2356-0766",
 
     "map":"https://maps.app.goo.gl/1tXBgYWhwHdvxGpF8",
     "other":"中途、可領養",
     "tags":["中途"]
 
-  }
+  },
   {
      "id":"Ximen",
     "station":"西門站",
     "title":"早初entry time",
     "time":"週一 ~ 週五：10:00 ~ 16:30 (週三公休)、週六、日：10:00 ~ 17:00",
     "address":"台北市萬華區成都路165號",
-    "tel:"09-08811100",
+    "tel":"09-08811100",
     "fb":"https://www.facebook.com/XiaoChu.isFlying/",
     "instagram":"https://www.instagram.com/chu_entrytime/",
     "map":"https://maps.app.goo.gl/HxwBxmBDRihqvLtW7",
     "other":"店貓、明信片",
     "tags":["店貓"]
-  }
+  },
    {
      "id":"Ximen",
     "station":"西門站",
     "title":"FUFUCatCafe",
     "time":"週一 ~ 週日：12:00 ~ 21:00",
     "address":"台北市萬華區武昌街二段53號3樓",
-    "tel:"(02) 2388-3722",
+    "tel":"(02)2388-3722",
     "fb":"https://www.facebook.com/FUFUCatCafe/?_rdr",
     
     "map":"https://maps.app.goo.gl/akJH9FGBf48t3FZg7",
     "other":"品種貓、禁12歲以下",
-    "tags":["品種貓"、"禁年齡"]
-  }
+    "tags":["品種貓","禁年齡"]
+  },
     {
     "id":"Jiangzicui",
     "station":"江子翠站",
@@ -328,7 +328,7 @@
     "map":"https://maps.app.goo.gl/dtMFxMB53roNUXz5A",
     "other":"中途之家",
     "tags":["中途"]
-  }
+  },
   {
     
     "id":"Jiangzicui",
@@ -341,7 +341,7 @@
     "map":"https://maps.app.goo.gl/Bti4T1VrQmGRd9hN9",
     "other":"寵物住宿/寵物SPA/寵物安親",
     "tags":["店貓"]
-  }
+  },
    {
     
     "id":"Jiangzicui",
@@ -354,7 +354,7 @@
     "map":"https://maps.app.goo.gl/AnVdk53DThzi6jrf9",
     "other":"可領養",
     "tags":["領養"]
-  }
+  },
    {
      "id":"Xinpu",
     "station":"新埔站",
@@ -366,7 +366,7 @@
     "map":"https://maps.app.goo.gl/jhYULkVFmifg5r8aA",
     "other":"（非親子餐廳）",
     "tags":["很多貓"]
-  }
+  },
   {
     "id":"Banciao",
     "station":"板橋站",
@@ -380,7 +380,7 @@
     "other":"很多貓",
     "tags":["很多貓"]
 
-  }
+  },
 
 ]
   "orange-line":[
@@ -503,7 +503,7 @@
     "instagram":"https://www.instagram.com/egghost_dessert/",
     "map":"https://maps.app.goo.gl/qcVXTnmtNsr4jQmt7",
     "other":"店貓、寵物友善餐廳(限貓咪)",
-    "tags":["店貓"、"寵物友善餐廳"]
+    "tags":["店貓","寵物友善餐廳"]
     }
     {
    "id":"Guting",
@@ -557,7 +557,7 @@
     "fb":"https://www.facebook.com/catfuncafe",
     "map":"https://maps.app.goo.gl/B4CuTiBmGQFiUv1d7",
     "other":"品種貓、很多貓",
-    "tags":["品種貓"、"寵物貓"]
+    "tags":["品種貓","寵物貓"]
     }
 
   ]
@@ -598,7 +598,7 @@
     "instagram":"https://www.instagram.com/hiddenduoduo/#",
     "map":"https://maps.app.goo.gl/ijMe1JCTNg1ezvLG9",
     "other":"中途、禁12歲以下",
-    "tags":["中途"、"禁年齡"]
+    "tags":["中途","禁年齡"]
 
     }
      {
@@ -651,7 +651,7 @@
     "fb":"https://www.facebook.com/SpringDayPetShopCafe/", 
     "map":"https://maps.app.goo.gl/ngbBZWmZYCde34bY7",
     "other":"寵物美容'、寵物友善、挪威、英短、品種貓",
-    "tags":["寵物友善餐廳"、"品種貓"]
+    "tags":["寵物友善餐廳","品種貓"]
      }
      {
     "id":"Nanjing-Sanmin",
@@ -739,7 +739,7 @@
     "fb":"https://www.facebook.com/profile.php?id=100063830744637",
     "map":"https://maps.app.goo.gl/1RpNYyc5doPD9tcx8",
     "other":"中途、禁12歲以下",
-    "tags":["中途"、"禁年齡"]
+    "tags":["中途","禁年齡"]
      }
 
 

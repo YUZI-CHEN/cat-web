@@ -14,10 +14,10 @@ const stationDataRed = [
   { id: "Zhishan", name: "芝山", hasData: true },
   { id: "Shilin", name: "士林", hasData: false },
   { id: "Jiantan", name: "劍潭", hasData: false },
-  { id: "Yuanshan", name: "圓山", hasData:true },
+  { id: "Yuanshan", name: "圓山", hasData: true },
   { id: "Minquan", name: "民權西路", hasData: false },
   { id: "Shuanglian", name: "雙連", hasData: true },
-  { id: "Zhongshan", name: "中山", hasData: true},
+  { id: "Zhongshan", name: "中山", hasData: true },
   { id: "Taipei-Main", name: "台北車站", hasData: false },
   { id: "NTUH", name: "臺大醫院", hasData: false },
   { id: "Chian-Kai-Shek", name: "中正紀念堂", hasData: true },
@@ -30,13 +30,16 @@ const stationDataRed = [
 
 
 ];
+
 function renderStations(data) {
   const redLineGroup = document.getElementById("red-line");
+  
 
   // 清空現有內容
   redLineGroup.innerHTML = `
     <image href="./img/freshwater.svg" class="line" data-tag="淡水線" />
   `;
+
 
   data.forEach((station) => {
     if (station.hasData) {
@@ -54,3 +57,4 @@ function renderStations(data) {
 
 // 呼叫函數渲染站點
 renderStations(stationDataRed);
+
