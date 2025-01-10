@@ -238,10 +238,8 @@ function displayInfos(infos) {
         <p><strong>其他：</strong>${info.other}</p>
         <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
         ${icons}
-       </div>
-       <br>
+       </div> 
        <hr>
-        
       `;
     });
 
