@@ -50,13 +50,13 @@
 
           <!-- 淡水線 (紅線) -->
           <g id="red-line" class="line-group">
-            <image href="./img/freshwater.svg" class="line" data-tag="淡水線" />
+           <!--  <image href="./img/freshwater.svg" class="line" data-tag="淡水線" /> -->
             <!-- 站點 -->
-            <image class="Xinbeitou point" data-name="新北投" href="./img/MAP-點.svg" />
+          <!--   <image class="Xinbeitou point" data-name="新北投" href="./img/MAP-點.svg" />
             <image class="Danshui point" data-name="淡水" href="./img/MAP-點.svg" />
             <image class="Hongshulin point" data-name="紅樹林" href="./img/MAP-點.svg" />
             <image class="Zhuwei point" data-name="竹圍" href="./img/MAP-點.svg" />
-            <image class="Guandu point" data-name="Guandu" href="./img/MAP-點.svg" />
+            <image class="Guandu point" data-name="關渡"  data-id="Guandu" href="./img/MAP-點.svg" />
             <image class="Zhongyi point" data-name="忠義" href="./img/MAP-點.svg" />
             <image class="Fuzinggang point" data-name="復興崗" href="./img/MAP-點.svg" />
             <image class="Beitou point" data-name="北投" href="./img/MAP-點.svg" />
@@ -64,7 +64,7 @@
             <image class="Qilian point" data-name="唭哩岸" href="./img/MAP-點.svg" />
             <image class="Shipai point" data-name="石牌" href="./img/MAP-點.svg" />
             <image class="Mingde point" data-name="明德" href="./img/MAP-點.svg" />
-            <image class="Zhishan point" data-name="Zhishan" href="./img/MAP-點.svg" />
+            <image class="Zhishan point" data-name="芝山" href="./img/MAP-點.svg" />
             <image class="Shilin point" data-name="士林" href="./img/MAP-點.svg" />
             <image class="Jiantan point" data-name="劍潭" href="./img/MAP-點.svg" />
             <image class="Yuanshan point" data-name="圓山" href="./img/MAP-點.svg" />
@@ -79,7 +79,7 @@
             <image class="Daan point" data-name="大安" href="./img/MAP-點.svg" />
             <image class="Xinyi-Anhe point" data-name="信義安和" href="./img/MAP-點.svg" />
             <image class="Taipei101 point" data-name="台北101" href="./img/MAP-點.svg" />
-            <image class="Xiangshan point" data-name="象山" href="./img/MAP-點.svg" />
+            <image class="Xiangshan point" data-name="象山" href="./img/MAP-點.svg" /> -->
 
 
           </g>
@@ -223,21 +223,25 @@
             <image class="Xindian point" data-name="新店" href="./img/MAP-點.svg" />
           </g>
         </svg>
+
+
+        <div id="infoBox" class="info-box">
+          <button id="closeBtn" class="close-btn">關閉</button>
+          <div id="infoContent">
+            
+          </div>
       </section>
-      <!-- 資訊框 -->
-      <foreignObject x="0" y="0" width="200" height="150" class="info-box" style="display: none;">
-        <div xmlns="http://www.w3.org/1999/xhtml" style="background: white; border: 1px solid black; padding: 10px;">
-          <h3 id="info-title"></h3>
-          <p id="info-time"></p>
-          <p id="info-address"></p>
-          <p id="info-tel"></p>
-        </div>
-      </foreignObject>
+     
+      
+
 
     </main>
     <script src="./js/nav.js"></script>
+    
     <script src="./js/search-tab.js"></script>
-    <script src="./js/search-red.js"></script>
+   
+    <script src="./js/showPoint.js"></script>
+    <script src="./js/Red-StandData.js"></script>
 
   </body>
 

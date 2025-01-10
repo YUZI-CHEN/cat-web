@@ -132,6 +132,13 @@ main {
   .point {
     width: 30px;
     height: 30px;
+    
+   
+    &:hover {
+      color: red; /* 悬停时字体变红 */
+      text-decoration: underline; /* 添加下划线 */
+      cursor: pointer;
+    }
   }
 }
 
@@ -904,28 +911,29 @@ main {
 
 
 }
-// 資訊框
-.info-box {
-  display: none;
-  position: absolute;
-  background: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 100;
-  
-  .close-btn {
-    text-align: right;
-    margin-bottom: 10px;
-    button {
-      cursor: pointer;
-    }
-  }
 
-}
-.visible {
-  display: block;
-}
+// 資訊框
+// .info-box {
+//   display: none;
+//   position: absolute;
+//   background: white;
+//   border: 1px solid #ccc;
+//   padding: 10px;
+//   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+//   z-index: 100;
+
+//   .close-btn {
+//     text-align: right;
+//     margin-bottom: 10px;
+//     button {
+//       cursor: pointer;
+//     }
+//   }
+
+// }
+// .visible {
+//   display: block;
+// }
 // .info-box.visible {
 //   display: block;
 // }
@@ -936,3 +944,43 @@ main {
 // .info-box .close-btn button {
 //   cursor: pointer;
 // }
+
+.info-box {
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  background-color: white;
+  border: 2px solid #7e3d3d;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+  display: none;
+
+  .icon {
+    display: flex;
+    margin-left: 80%;
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+    }
+  }
+
+}
+
+.close-btn {
+  display: inline-block;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  float: right;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #ff0000;
+  }
+}
