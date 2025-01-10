@@ -231,7 +231,7 @@ function displayInfos(infos) {
       infoContent.innerHTML += `
       <div class="info-item">
         <h3>${info.title} (${info.station})</h3>
-        <hr class=title-hr>
+        <hr class="title-hr">
         <p><strong>營業時間：</strong>${info.time}</p>
         <p><strong>地址：</strong>${info.address}</p>
         <p><strong>電話：</strong>${info.tel}</p>
@@ -239,7 +239,7 @@ function displayInfos(infos) {
         <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
         ${icons}
        </div>
-       
+       <br>
        <hr>
         
       `;
