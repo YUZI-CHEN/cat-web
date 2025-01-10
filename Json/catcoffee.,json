@@ -119,7 +119,7 @@
     "id":"Zhongshan",
     "station":"中山站",
     "title":"貓妝自家烘焙咖啡屋",
-    "time":"週日一~ 週五：11:30 ~ 21:30、週六:09:00 ~ 22:00、週日 :10:00~20:00",
+    "time":"週一~ 週五：11:30 ~ 21:30、週六:09:00 ~ 22:00、週日 :10:00~20:00",
     "address":"台北市大同區長安西路64號",
     "tel":"(02)2550-0561",
     "fb":"https://www.facebook.com/maskcatcafe.25500561/",
@@ -127,18 +127,7 @@
     "other":"店貓",
     "tags":["店貓"]
   }
-  {
-    "id":"Zhongshan",
-    "station":"中山站",
-    "title":"貓妝自家烘焙咖啡屋",
-    "time":"週日一~ 週五：11:30 ~ 21:30、週六:09:00 ~ 22:00、週日 :10:00~20:00",
-    "address":"台北市大同區長安西路64號",
-    "tel":"(02)2550-0561",
-    "fb":"https://www.facebook.com/maskcatcafe.25500561/",
-    "map":"https://maps.app.goo.gl/Zk1gYjSTpZQPPnXa9",
-    "other":"店貓",
-    "tags":["店貓"]
-  }
+ 
   {
     "id":"Zhongshan",
     "station":"中山站",
