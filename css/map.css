@@ -62,6 +62,7 @@ main {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  font-family: "FlourFont";
 }
 
 #search-box {
@@ -827,4 +828,19 @@ main {
 }
 .close-btn:hover {
   background-color: #ff0000;
+}
+
+.tag {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.tag.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
 }/*# sourceMappingURL=map.css.map */

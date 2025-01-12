@@ -41,11 +41,11 @@ function renderStations(data) {
   `;
 
 
-  data.forEach((station) => {
+  data.forEach((station) => { 
     if (station.hasData) {
       const stationImage = `
         <image 
-          class="${station.id}  point" 
+          class="${station.id}  point  redLine" 
           data-name="${station.name}" 
           data-id="${station.id}" 
           href="./img/MAP-點.svg" />
@@ -57,4 +57,3 @@ function renderStations(data) {
 
 // 呼叫函數渲染站點
 renderStations(stationDataRed);
-

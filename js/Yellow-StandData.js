@@ -9,7 +9,8 @@ const yellowLineData=[
     "fb":"https://www.facebook.com/catfuncafe",
     "map":"https://maps.app.goo.gl/B4CuTiBmGQFiUv1d7",
     "other":"品種貓、很多貓",
-    "tags":["品種貓","寵物貓"]
+    "tags": ["店貓"],
+
     },
 ];
 

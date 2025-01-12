@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>北捷貓咖MAP</title>
 
- 
-    
+
+
     <link rel="stylesheet" href="./css/map.min.css">
 
   </head>
@@ -34,11 +34,17 @@
               <span class="tag" onclick="toggleTag(this)" data-line-id="yellow-line" data-tag="環狀線">環狀線</span>
               <span class="tag" onclick="toggleTag(this)" data-line-id="brown-line" data-tag="文湖線">文湖線</span>
               <span class="tag" onclick="toggleTag(this)" data-line-id="green-line" data-tag="新店線">新店線</span>
+
         </div>
 
         <div id="Paris" class="search">
           <h3>選擇標籤</h3>
-          <p>Paris is the capital of France.</p>
+          <span class="tag" onclick="toggleTag(this)" data-tag="中途"  data-filter="中途">中途</span>
+          <span class="tag" onclick="toggleTag(this)" data-tag="禁年齡"  data-filter="禁年齡">禁年齡(12歲以下)</span>
+          <span class="tag" onclick="toggleTag(this)" data-tag="店貓" data-filter="店貓">店貓(3隻以下)</span>
+          <span class="tag" onclick="toggleTag(this)" data-tag="很多貓"  data-filter="很多貓">很多貓(3隻以上)</span>
+          <span class="tag" onclick="toggleTag(this)" data-tag="品種貓"  data-filter="品種貓">品種貓</span>
+          <span class="tag" onclick="toggleTag(this)" data-tag="寵物友善"  data-filter="寵物友善">寵物友善</span>
         </div>
 
 
@@ -53,177 +59,32 @@
 
           <!-- 淡水線 (紅線) -->
           <g id="red-line" class="line-group">
-           <!--  <image href="./img/freshwater.svg" class="line" data-tag="淡水線" /> -->
-            <!-- 站點 -->
-          <!--   <image class="Xinbeitou point" data-name="新北投" href="./img/MAP-點.svg" />
-            <image class="Danshui point" data-name="淡水" href="./img/MAP-點.svg" />
-            <image class="Hongshulin point" data-name="紅樹林" href="./img/MAP-點.svg" />
-            <image class="Zhuwei point" data-name="竹圍" href="./img/MAP-點.svg" />
-            <image class="Guandu point" data-name="關渡"  data-id="Guandu" href="./img/MAP-點.svg" />
-            <image class="Zhongyi point" data-name="忠義" href="./img/MAP-點.svg" />
-            <image class="Fuzinggang point" data-name="復興崗" href="./img/MAP-點.svg" />
-            <image class="Beitou point" data-name="北投" href="./img/MAP-點.svg" />
-            <image class="Qiyan point" data-name="奇岩" href="./img/MAP-點.svg" />
-            <image class="Qilian point" data-name="唭哩岸" href="./img/MAP-點.svg" />
-            <image class="Shipai point" data-name="石牌" href="./img/MAP-點.svg" />
-            <image class="Mingde point" data-name="明德" href="./img/MAP-點.svg" />
-            <image class="Zhishan point" data-name="芝山" href="./img/MAP-點.svg" />
-            <image class="Shilin point" data-name="士林" href="./img/MAP-點.svg" />
-            <image class="Jiantan point" data-name="劍潭" href="./img/MAP-點.svg" />
-            <image class="Yuanshan point" data-name="圓山" href="./img/MAP-點.svg" />
-            <image class="Minquan point" data-name="民權西路" href="./img/MAP-點.svg" />
-            <image class="Shuanglian point" data-name="雙連" href="./img/MAP-點.svg" />
-            <image class="Zhongshan point" data-name="中山" href="./img/MAP-點.svg" />
-            <image class="Taipei-Main point" data-name="台北車站" href="./img/MAP-點.svg" />
-            <image class="NTUH point" data-name="臺大醫院" href="./img/MAP-點.svg" />
-            <image class="Chian-Kai-Shek point" data-name="中正紀念堂" href="./img/MAP-點.svg" />
-            <image class="Dongmen point" data-name="東門" href="./img/MAP-點.svg" />
-            <image class="Daan-Park point" data-name="大安森林公園" href="./img/MAP-點.svg" />
-            <image class="Daan point" data-name="大安" href="./img/MAP-點.svg" />
-            <image class="Xinyi-Anhe point" data-name="信義安和" href="./img/MAP-點.svg" />
-            <image class="Taipei101 point" data-name="台北101" href="./img/MAP-點.svg" />
-            <image class="Xiangshan point" data-name="象山" href="./img/MAP-點.svg" /> -->
-
 
           </g>
 
           <!-- 板南線 (藍線) -->
           <g id="blue-line" class="line-group">
-            <!-- <image href="./img/bannan.svg" class="line" data-tag="板南線" /> -->
-            <!-- 站點 -->
-            <!-- <image class="Nangang-Exhibition point" data-name="南港展覽館" href="./img/MAP-點.svg" />
-            <image class="Nangang point" data-name="南港" href="./img/MAP-點.svg" />
-            <image class="Kunyang point" data-name="昆陽" href="./img/MAP-點.svg" />
-            <image class="Houshanpi point" data-name="後山埤" href="./img/MAP-點.svg" />
-            <image class="Yongchun point" data-name="永春" href="./img/MAP-點.svg" />
-            <image class="TCH point" data-name="市政府" href="./img/MAP-點.svg" />
-            <image class="Memorial-Hall point" data-name="國父紀念館" href="./img/MAP-點.svg" />
-            <image class="Zhongxiao-Dunhua point" data-name="忠孝敦化" href="./img/MAP-點.svg" />
-            <image class="Zhongxiao-Fuxing point" data-name="忠孝復興" href="./img/MAP-點.svg" />
-            <image class="Zhongxiao-Xinsheng point" data-name="忠孝新生" href="./img/MAP-點.svg" />
-            <image class="Shandao-Temple point" data-name="善導寺" href="./img/MAP-點.svg" />
-            <image class="Taipei-Main point" data-name="台北車站" href="./img/MAP-點.svg" />
-            <image class="Ximen point" data-name="西門" href="./img/MAP-點.svg" />
-            <image class="Longshan-Temple point" data-name="龍山寺" href="./img/MAP-點.svg" />
-            <image class="Jiangzicui point" data-name="江子翠" href="./img/MAP-點.svg" />
-            <image class="Xinpu point" data-name="新補" href="./img/MAP-點.svg" />
-            <image class="Banciao point" data-name="板橋" href="./img/MAP-點.svg" />
-            <image class="Fuzhong point" data-name="府中" href="./img/MAP-點.svg" />
-            <image class="FEH point" data-name="亞東醫院" href="./img/MAP-點.svg" />
-            <image class="Haishan point" data-name="海山" href="./img/MAP-點.svg" />
-            <image class="Tucheng point" data-name="土城" href="./img/MAP-點.svg" />
-            <image class="Yongning point" data-name="永寧" href="./img/MAP-點.svg" />
-            <image class="Dingpu point" data-name="頂埔" href="./img/MAP-點.svg" /> -->
+
           </g>
 
           <!-- 中和新蘆線 (橙線) -->
           <g id="orange-line" class="line-group">
-            <!-- <image href="./img/luzhou.svg" class="line" data-tag="中和新蘆線" />
-            <image class="Luzhou point" data-name="蘆洲" href="./img/MAP-點.svg" />
-            <image class="SSHS point" data-name="三民高中" href="./img/MAP-點.svg" />
-            <image class="IHS point" data-name="徐匯中學" href="./img/MAP-點.svg" />
-            <image class="SJHS point" data-name="三和國中" href="./img/MAP-點.svg" />
-            <image class="SES point" data-name="三重國小" href="./img/MAP-點.svg" />
-            <image class="Huilong point" data-name="迴龍" href="./img/MAP-點.svg" />
-            <image class="Danfeng point" data-name="丹鳳" href="./img/MAP-點.svg" />
-            <image class="FJU point" data-name="輔大" href="./img/MAP-點.svg" />
-            <image class="Xinzhuang point" data-name="新莊" href="./img/MAP-點.svg" />
-            <image class="Touqianzhuang point" data-name="頭前庄" href="./img/MAP-點.svg" />
-            <image class="Xianse-Temple point" data-name="先嗇宮" href="./img/MAP-點.svg" />
-            <image class="Sanchong  point" data-name="三重" href="./img/MAP-點.svg" />
-            <image class="Cailiao  point" data-name="菜寮" href="./img/MAP-點.svg" />
-            <image class="Taipei-Bridge  point" data-name="台北橋" href="./img/MAP-點.svg" />
-            <image class="Daqiaotou point" data-name="大橋頭" href="./img/MAP-點.svg" />
-            <image class="Minquan point" data-name="民權西路" href="./img/MAP-點.svg" />
-            <image class="ZES point" data-name="中山國小" href="./img/MAP-點.svg" />
-            <image class="Xingtian-Temple point" data-name="行天宮" href="./img/MAP-點.svg" />
-            <image class="Songjiang-Nanjing point" data-name="松江南京" href="./img/MAP-點.svg" />
-            <image class="Zhongxiao-Xinsheng point" data-name="忠孝新生" href="./img/MAP-點.svg" />
-            <image class="Dongmen point" data-name="東門" href="./img/MAP-點.svg" />
-            <image class="Guting point" data-name="古亭" href="./img/MAP-點.svg" />
-            <image class="Dingxi  point" data-name="頂溪" href="./img/MAP-點.svg" />
-            <image class="Yongan-Market point" data-name="永安市場" href="./img/MAP-點.svg" />
-            <image class="Jingan point" data-name="景安" href="./img/MAP-點.svg" />
-
-            <image class="Nanshijiao point" data-name="南勢角" href="./img/MAP-點.svg" />
- -->
-
 
           </g>
 
           <!-- 環狀線 (黃線) -->
           <g id="yellow-line" class="line-group">
-            <!-- <image href="./img/newTaipei.svg" class="line" data-tag="環狀線" />
-            <image class="NTIP point" data-name="新北產業園區" href="./img/MAP-點.svg" />
-            <image class="Xingfu point" data-name="幸福" href="./img/MAP-點.svg" />
-            <image class="Touqianzhuang point" data-name="頭前庄" href="./img/MAP-點.svg" />
-            <image class="Xinpu-Minsheng point" data-name="新埔民生" href="./img/MAP-點.svg" />
-            <image class="Banciao point" data-name="板橋" href="./img/MAP-點.svg" />
-            <image class="Banxin point" data-name="板新" href="./img/MAP-點.svg" />
-            <image class="Zhongyuan point" data-name="中原" href="./img/MAP-點.svg" />
-            <image class="Qiaohe point" data-name="橋和" href="./img/MAP-點.svg" />
-            <image class="Zhonghe point" data-name="中和" href="./img/MAP-點.svg" />
-            <image class="Jingan point" data-name="景安" href="./img/MAP-點.svg" />
-            <image class="Jingping point" data-name="景平" href="./img/MAP-點.svg" />
-            <image class="Xiulang-Bridge point" data-name="秀朗橋" href="./img/MAP-點.svg" />
-            <image class="Shisizhang point" data-name="十四張" href="./img/MAP-點.svg" />
-            <image class="Dapinglin point" data-name="大坪林" href="./img/MAP-點.svg" /> -->
 
           </g>
 
           <!-- 文湖線 (棕線) -->
           <g id="brown-line" class="line-group">
-            <!-- <image href="./img/nucha.svg" class="line" data-tag="文湖線" />
-            <image class="Nangang-Exhibition point" data-name="南港展覽館" href="./img/MAP-點.svg" />
-            <image class="Nangang-Software-park point" data-name="南港軟體園區" href="./img/MAP-點.svg" />
-            <image class="Donghu point" data-name="東湖" href="./img/MAP-點.svg" />
-            <image class="Huzhou point" data-name="葫州" href="./img/MAP-點.svg" />
-            <image class="Dahu-Park  point" data-name="大湖公園" href="./img/MAP-點.svg" />
-            <image class="Neihu  point" data-name="內湖" href="./img/MAP-點.svg" />
-            <image class="Wende point" data-name="文德" href="./img/MAP-點.svg" />
-            <image class="Gangqian point" data-name="港墘" href="./img/MAP-點.svg" />
-            <image class="Xihu point" data-name="西湖" href="./img/MAP-點.svg" />
-            <image class="Jiannang-Rd point" data-name="劍南路" href="./img/MAP-點.svg" />
-            <image class="Dazhi point" data-name="大直" href="./img/MAP-點.svg" />
-            <image class="Songshan-Airport point" data-name="松山機場" href="./img/MAP-點.svg" />
-            <image class="ZJHS point" data-name="中山國中" href="./img/MAP-點.svg" />
-            <image class="Nanjing-Fuxing point" data-name="南京復興" href="./img/MAP-點.svg" />
-            <image class="Zhongxiao-Fuxing point" data-name="忠孝復興" href="./img/MAP-點.svg" />
-            <image class="Daan point" data-name="大安" href="./img/MAP-點.svg" />
-            <image class="Technology-Building  point" data-name="科技大樓" href="./img/MAP-點.svg" />
-            <image class="Liuzhanli  point" data-name="六張犁" href="./img/MAP-點.svg" />
-            <image class="Linguang  point" data-name="麟光" href="./img/MAP-點.svg" />
-
-            <image class="Xinhai  point" data-name="辛亥" href="./img/MAP-點.svg" />
-            <image class="WH  point" data-name="萬芳醫院" href="./img/MAP-點.svg" />
-            <image class="WC  point" data-name="萬芳社區" href="./img/MAP-點.svg" />
-            <image class="Muzha  point" data-name="木柵" href="./img/MAP-點.svg" />
-            <image class="Zoo  point" data-name="動物園" href="./img/MAP-點.svg" /> -->
 
           </g>
 
           <!-- 新店線 (綠線) -->
           <g id="green-line" class="line-group">
-            <!-- <image href="./img/xindian.svg" class="line" data-tag="新店線" />
-            <image class="Songshan point" data-name="松山" href="./img/MAP-點.svg" />
-            <image class="Nanjing-Sanmin point" data-name="南京三民" href="./img/MAP-點.svg" />
-            <image class="Taipei-Arena point" data-name="台北小巨蛋" href="./img/MAP-點.svg" />
-            <image class="Nanjing-Fuxing point" data-name="南京復興" href="./img/MAP-點.svg" />
-            <image class="Songjiang-Nanjing point" data-name="松江南京" href="./img/MAP-點.svg" />
-            <image class="Zhongshan point" data-name="中山" href="./img/MAP-點.svg" />
-            <image class="Beimen point" data-name="北門" href="./img/MAP-點.svg" />
-            <image class="Ximen point" data-name="西門" href="./img/MAP-點.svg" />
-            <image class="Xiaonanmen point" data-name="小南門" href="./img/MAP-點.svg" />
-            <image class="Chian-Kai-Shek point" data-name="中正紀念堂" href="./img/MAP-點.svg" />
-            <image class="Guting point" data-name="古亭" href="./img/MAP-點.svg" />
-            <image class="Taipower-Building point" data-name="台電大樓" href="./img/MAP-點.svg" />
-            <image class="Gongguan point" data-name="公館" href="./img/MAP-點.svg" />
-            <image class="Wanlong point" data-name="萬隆" href="./img/MAP-點.svg" />
-            <image class="Jingmei point" data-name="景美" href="./img/MAP-點.svg" />
-            <image class="Dapinglin point" data-name="大坪林" href="./img/MAP-點.svg" />
-            <image class="Qizhang point" data-name="七張" href="./img/MAP-點.svg" />
-            <image class="Xindian-District-Office point" data-name="新店區公所" href="./img/MAP-點.svg" />
-            <image class="Xindian point" data-name="新店" href="./img/MAP-點.svg" /> -->
+
           </g>
         </svg>
 
@@ -231,20 +92,21 @@
         <div id="infoBox" class="info-box">
           <button id="closeBtn" class="close-btn">關閉</button>
           <div id="infoContent">
-            
+
           </div>
       </section>
-     
-      
+
+
 
 
     </main>
-    
+
 
     <script src="./js/nav.js"></script>
-    
+
     <script src="./js/search-tab.js"></script>
-   <!-- 展現站點 -->
+ 
+    <!-- 展現站點 -->
     <script src="./js/showPoint.js"></script>
     <script src="./js/showPoint-b.js"></script>
     <script src="./js/showPoint-o.js"></script>
@@ -252,13 +114,13 @@
     <script src="./js/showPoint-br.js"></script>
     <script src="./js/showPoint-g.js"></script>
     <!-- 站點貓咖資料 -->
-    <script src="./js/Red-StandData.js"></script>
-    <script src="./js/Blue-StandData.js"></script>
-    <script src="./js/Orange-StandData.js"></script>
+     <!-- <script src="./js/Red-StandData.js"></script>
+    <script src="./js/Blue-StandData.js"></script>   -->
+    <!-- <script src="./js/Orange-StandData.js"></script>
     <script src="./js/Yellow-StandData.js"></script>
     <script src="./js/Brown-StandData.js"></script>
-    <script src="./js/Green-StandData.js"></script>
-
+    <script src="./js/Green-StandData.js"></script>    -->
+    <script src="./js/searchTab.js"></script>
   </body>
 
 </html>
