@@ -1,5 +1,5 @@
 
-const redLineData2 = [
+const redLineData = [
   {
     "id": "Guandu",
     "station": "關渡站",
@@ -203,7 +203,7 @@ const redLineData2 = [
 // document.querySelectorAll(".point").forEach((point) => {
 //   point.addEventListener("click", (e) => {
 //     const id = e.target.dataset.id;
-//     // const info = redLineData.find(item => item.id === id);
+   
 //     const infos = redLineData.filter(item => item.id === id);
 //     displayInfos(infos);
 //   });
@@ -253,35 +253,102 @@ const redLineData2 = [
 //   const infoBox = document.getElementById("infoBox");
 //   infoBox.style.display = "none";
 // });
+
+
 // 1. 绑定標籤選擇事件
-document.querySelectorAll(".tag").forEach(tag => {
+// document.querySelectorAll(".tag").forEach(tag => {
+//   tag.addEventListener("click", (e) => {
+//     const selectedTag = e.target.dataset.tag;
+//     // 根據標籤過濾資料
+//     const filteredInfos = redLineData.filter(item => item.tags.includes(selectedTag));
+//     displayInfos(filteredInfos);
+//   });
+// });
+
+// // 2. 绑定地圖點擊事件
+// document.querySelectorAll(".point").forEach((point) => {
+//   point.addEventListener("click", (e) => {
+//     const id = e.target.dataset.id;
+//     const infos = redLineData.filter(item => item.id === id);
+//     displayInfos(infos);
+//   });
+// });
+
+// // 3. 顯示資料
+// function displayInfos(infos) {
+//   const infoBox = document.getElementById("infoBox");
+//   const infoContent = document.getElementById("infoContent");
+  
+//   if (infos.length > 0) {
+//     // 清空之前的內容
+//     infoContent.innerHTML = "";
+    
+//     // 顯示資料
+//     infos.forEach(info => {
+//       const icons = `
+//         <div class="icon">
+//           ${info.web ? `<a href="${info.web}" target="_blank"><img src="./img/web.png" alt="網站"></a>` : ""}
+//           ${info.fb ? `<a href="${info.fb}" target="_blank"><img src="./img/facebook.png" alt="fb"></a>` : ""}
+//           ${info.instagram ? `<a href="${info.instagram}" target="_blank"><img src="./img/instagram (1).png" alt="instagram"></a>` : ""}
+//           ${info.tiktok ? `<a href="${info.tiktok}" target="_blank"><img src="./img/social-media (2).png" alt="tiktok"></a>` : ""}
+//           ${info.map ? `<a href="${info.map}" target="_blank"><img src="./img/pin.png" alt="map"></a>` : ""}
+//         </div>
+//       `;
+      
+//       infoContent.innerHTML += `
+//         <div class="info-item">
+//           <h3>${info.title} (${info.station})</h3>
+//           <hr class="title-hr">
+//           <p><strong>營業時間：</strong>${info.time}</p>
+//           <p><strong>地址：</strong>${info.address}</p>
+//           <p><strong>電話：</strong>${info.tel}</p>
+//           <p><strong>其他：</strong>${info.other}</p>
+//           <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
+//           ${icons}
+//         </div>
+//         <hr>
+//       `;
+//     });
+
+//     infoBox.style.display = "block";
+//   } else {
+//     infoContent.innerHTML = "<p>沒有找到相關的地點。</p>";
+//     infoBox.style.display = "block";
+//   }
+// }
+
+// // 4. 關閉信息框
+// document.getElementById("closeBtn").addEventListener("click", () => {
+//   const infoBox = document.getElementById("infoBox");
+//   infoBox.style.display = "none";
+// });
+
+// 1. 綁定標籤選擇事件 (紅線資料)
+document.querySelectorAll(".red-tag").forEach(tag => {
   tag.addEventListener("click", (e) => {
     const selectedTag = e.target.dataset.tag;
-    // 根據標籤過濾資料
-    const filteredInfos = redLineData2.filter(item => item.tags.includes(selectedTag));
-    displayInfos(filteredInfos);
+    // 根據標籤篩選資料
+    const filteredInfos = redLineData.filter(item => item.tags.includes(selectedTag));
+    displayRedLineInfos(filteredInfos);
   });
 });
 
-// 2. 绑定地圖點擊事件
-document.querySelectorAll(".point").forEach((point) => {
+// 2. 綁定地圖點擊事件 (紅線資料)
+document.querySelectorAll(".redLine").forEach(point => {
   point.addEventListener("click", (e) => {
     const id = e.target.dataset.id;
-    const infos = redLineData2.filter(item => item.id === id);
-    displayInfos(infos);
+    const infos = redLineData.filter(item => item.id === id);
+    displayRedLineInfos(infos);
   });
 });
 
-// 3. 顯示資料
-function displayInfos(infos) {
-  const infoBox = document.getElementById("infoBox");
-  const infoContent = document.getElementById("infoContent");
+// 3. 顯示紅線資料
+function displayRedLineInfos(infos) {
+  const infoBox = document.getElementById("redInfoBox");
+  const infoContent = document.getElementById("redInfoContent");
   
   if (infos.length > 0) {
-    // 清空之前的內容
-    infoContent.innerHTML = "";
-    
-    // 顯示資料
+    infoContent.innerHTML = ""; // 清空内容
     infos.forEach(info => {
       const icons = `
         <div class="icon">
@@ -292,7 +359,6 @@ function displayInfos(infos) {
           ${info.map ? `<a href="${info.map}" target="_blank"><img src="./img/pin.png" alt="map"></a>` : ""}
         </div>
       `;
-      
       infoContent.innerHTML += `
         <div class="info-item">
           <h3>${info.title} (${info.station})</h3>
@@ -307,7 +373,6 @@ function displayInfos(infos) {
         <hr>
       `;
     });
-
     infoBox.style.display = "block";
   } else {
     infoContent.innerHTML = "<p>沒有找到相關的地點。</p>";
@@ -315,90 +380,8 @@ function displayInfos(infos) {
   }
 }
 
-// 4. 關閉信息框
-document.getElementById("closeBtn").addEventListener("click", () => {
-  const infoBox = document.getElementById("infoBox");
+// 4. 關閉紅線信息框
+document.getElementById("redCloseBtn").addEventListener("click", () => {
+  const infoBox = document.getElementById("redInfoBox");
   infoBox.style.display = "none";
 });
-
-// ........
-// let selectedLines = [];
-// let selectedTags = [];
-
-// // 模擬的資料集
-// const data = [
-//   { "id": "1", "line": "淡水線", "title": "淡水老街", "tags": ["店貓", "中途"], "info": "詳細資訊" },
-//   { "id": "2", "line": "板南線", "title": "板南線站", "tags": ["禁年齡", "寵物友善"], "info": "詳細資訊" },
-//   { "id": "3", "line": "淡水線", "title": "淡水夜市", "tags": ["店貓", "很多貓"], "info": "詳細資訊" },
-//   { "id": "4", "line": "板南線", "title": "西門站", "tags": ["寵物友善"], "info": "詳細資訊" }
-// ];
-
-// // 用來切換選擇的線路或標籤
-// function toggleTag(element) {
-//   const tag = element.getAttribute('data-tag');
-//   const lineId = element.getAttribute('data-line-id');
-  
-//   // 這是選擇捷運線
-//   if (lineId) {
-//     if (selectedLines.includes(lineId)) {
-//       selectedLines = selectedLines.filter(line => line !== lineId);
-//       element.classList.remove('selected');
-//     } else {
-//       selectedLines.push(lineId);
-//       element.classList.add('selected');
-//     }
-//   } 
-//   // 這是選擇標籤
-//   else {
-//     if (selectedTags.includes(tag)) {
-//       selectedTags = selectedTags.filter(t => t !== tag);
-//       element.classList.remove('selected');
-//     } else {
-//       selectedTags.push(tag);
-//       element.classList.add('selected');
-//     }
-//   }
-
-//   // 根據選擇的線路和標籤來篩選資料
-//   filterData();
-// }
-
-// // 篩選資料
-// function filterData() {
-//   const filteredData = data.filter(item => {
-//     const lineMatches = selectedLines.length === 0 || selectedLines.includes(item.line);
-//     const tagsMatch = selectedTags.every(tag => item.tags.includes(tag));
-//     return lineMatches && tagsMatch;
-//   });
-
-//   displayInfos(filteredData);
-// }
-
-// // 顯示篩選後的資料
-// function displayInfos(filteredData) {
-//   const infoBox = document.getElementById("infoBox");
-//   const infoContent = document.getElementById("infoContent");
-
-//   if (filteredData.length > 0) {
-//     infoContent.innerHTML = "";
-//     filteredData.forEach(item => {
-//       infoContent.innerHTML += 
-//         <div class="info-item">
-//           <h3>${item.title}</h3>
-//           <p><strong>捷運線：</strong>${item.line}</p>
-//           <p><strong>標籤：</strong>${item.tags.join(", ")}</p>
-//           <p>${item.info}</p>
-//         </div>
-//       ;
-//     });
-//     infoBox.style.display = "block";  // 顯示資料框
-//   } else {
-//     infoContent.innerHTML = "<p>沒有符合條件的資料。</p>";
-//     infoBox.style.display = "block";
-//   }
-// }
-
-// // 關閉資料框
-// document.getElementById("closeBtn").addEventListener("click", () => {
-//   document.getElementById("infoBox").style.display = "none";
-// });

@@ -28,10 +28,10 @@
 
         <div id="search-line" class="search">
           <h3>選擇捷運線<h3>
-              <span class="tag" onclick="toggleTag(this)" data-line-id="red-line" data-tag="淡水線">淡水線</span>
-              <span class="tag" onclick="toggleTag(this)" data-line-id="blue-line" data-tag="板南線">板南線</span>
-              <span class="tag" onclick="toggleTag(this)" data-line-id="orange-line" data-tag="中和新蘆線">中和新蘆線</span>
-              <span class="tag" onclick="toggleTag(this)" data-line-id="yellow-line" data-tag="環狀線">環狀線</span>
+              <span class="tag red-tag" onclick="toggleTag(this)" data-line-id="red-line" data-tag="淡水線">淡水線</span>
+              <span class="tag " onclick="toggleTag(this)" data-line-id="blue-line" data-tag="板南線">板南線</span>
+              <span class="tag " onclick="toggleTag(this)" data-line-id="orange-line" data-tag="中和新蘆線">中和新蘆線</span>
+              <span class="tag " onclick="toggleTag(this)" data-line-id="yellow-line" data-tag="環狀線">環狀線</span>
               <span class="tag" onclick="toggleTag(this)" data-line-id="brown-line" data-tag="文湖線">文湖線</span>
               <span class="tag" onclick="toggleTag(this)" data-line-id="green-line" data-tag="新店線">新店線</span>
 
@@ -39,12 +39,12 @@
 
         <div id="Paris" class="search">
           <h3>選擇標籤</h3>
-          <span class="tag" onclick="toggleTag(this)" data-tag="中途"  data-filter="中途">中途</span>
-          <span class="tag" onclick="toggleTag(this)" data-tag="禁年齡"  data-filter="禁年齡">禁年齡(12歲以下)</span>
-          <span class="tag" onclick="toggleTag(this)" data-tag="店貓" data-filter="店貓">店貓(3隻以下)</span>
-          <span class="tag" onclick="toggleTag(this)" data-tag="很多貓"  data-filter="很多貓">很多貓(3隻以上)</span>
-          <span class="tag" onclick="toggleTag(this)" data-tag="品種貓"  data-filter="品種貓">品種貓</span>
-          <span class="tag" onclick="toggleTag(this)" data-tag="寵物友善"  data-filter="寵物友善">寵物友善</span>
+          <span class="tag red-tag" onclick="toggleTag(this)" data-tag="中途" data-filter="中途">中途</span>
+          <span class="tag red-tag" onclick="toggleTag(this)" data-tag="禁年齡" data-filter="禁年齡">禁年齡(12歲以下)</span>
+          <span class="tag red-tag" onclick="toggleTag(this)" data-tag="店貓" data-filter="店貓">店貓(3隻以下)</span>
+          <span class="tag red-tag" onclick="toggleTag(this)" data-tag="很多貓" data-filter="很多貓">很多貓(3隻以上)</span>
+          <span class="tag red-tag" onclick="toggleTag(this)" data-tag="品種貓" data-filter="品種貓">品種貓</span>
+          <span class="tag red-tag" onclick="toggleTag(this)" data-tag="寵物友善" data-filter="寵物友善">寵物友善</span>
         </div>
 
 
@@ -94,6 +94,12 @@
           <div id="infoContent">
 
           </div>
+        </div>
+         <!-- 红线信息框 -->
+         <div id="redInfoBox">
+          <div id="redInfoContent"></div>
+          <button id="redCloseBtn">關閉</button>
+        </div>
       </section>
 
 
@@ -105,7 +111,7 @@
     <script src="./js/nav.js"></script>
 
     <script src="./js/search-tab.js"></script>
- 
+
     <!-- 展現站點 -->
     <script src="./js/showPoint.js"></script>
     <script src="./js/showPoint-b.js"></script>
@@ -114,13 +120,14 @@
     <script src="./js/showPoint-br.js"></script>
     <script src="./js/showPoint-g.js"></script>
     <!-- 站點貓咖資料 -->
-     <!-- <script src="./js/Red-StandData.js"></script>
-    <script src="./js/Blue-StandData.js"></script>   -->
+    <script src="./js/Red-StandData.js"></script>
+    <script src="./js/Blue-StandData.js"></script>
+
     <!-- <script src="./js/Orange-StandData.js"></script>
     <script src="./js/Yellow-StandData.js"></script>
     <script src="./js/Brown-StandData.js"></script>
     <script src="./js/Green-StandData.js"></script>    -->
-    <script src="./js/searchTab.js"></script>
+    <!-- <script src="./js/searchTab.js"></script> -->
   </body>
 
 </html>
