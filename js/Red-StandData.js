@@ -255,116 +255,23 @@ const redLineData = [
 // });
 
 
-// 1. 绑定標籤選擇事件
-// document.querySelectorAll(".tag").forEach(tag => {
-//   tag.addEventListener("click", (e) => {
-//     const selectedTag = e.target.dataset.tag;
-//     // 根據標籤過濾資料
-//     const filteredInfos = redLineData.filter(item => item.tags.includes(selectedTag));
-//     displayInfos(filteredInfos);
-//   });
-// });
-
-// // 2. 绑定地圖點擊事件
-// document.querySelectorAll(".point").forEach((point) => {
-//   point.addEventListener("click", (e) => {
-//     const id = e.target.dataset.id;
-//     const infos = redLineData.filter(item => item.id === id);
-//     displayInfos(infos);
-//   });
-// });
-
-// // 3. 顯示資料
-// function displayInfos(infos) {
-//   const infoBox = document.getElementById("infoBox");
-//   const infoContent = document.getElementById("infoContent");
-  
-//   if (infos.length > 0) {
-//     // 清空之前的內容
-//     infoContent.innerHTML = "";
-    
-//     // 顯示資料
-//     infos.forEach(info => {
-//       const icons = `
-//         <div class="icon">
-//           ${info.web ? `<a href="${info.web}" target="_blank"><img src="./img/web.png" alt="網站"></a>` : ""}
-//           ${info.fb ? `<a href="${info.fb}" target="_blank"><img src="./img/facebook.png" alt="fb"></a>` : ""}
-//           ${info.instagram ? `<a href="${info.instagram}" target="_blank"><img src="./img/instagram (1).png" alt="instagram"></a>` : ""}
-//           ${info.tiktok ? `<a href="${info.tiktok}" target="_blank"><img src="./img/social-media (2).png" alt="tiktok"></a>` : ""}
-//           ${info.map ? `<a href="${info.map}" target="_blank"><img src="./img/pin.png" alt="map"></a>` : ""}
-//         </div>
-//       `;
-      
-//       infoContent.innerHTML += `
-//         <div class="info-item">
-//           <h3>${info.title} (${info.station})</h3>
-//           <hr class="title-hr">
-//           <p><strong>營業時間：</strong>${info.time}</p>
-//           <p><strong>地址：</strong>${info.address}</p>
-//           <p><strong>電話：</strong>${info.tel}</p>
-//           <p><strong>其他：</strong>${info.other}</p>
-//           <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
-//           ${icons}
-//         </div>
-//         <hr>
-//       `;
-//     });
-
-//     infoBox.style.display = "block";
-//   } else {
-//     infoContent.innerHTML = "<p>沒有找到相關的地點。</p>";
-//     infoBox.style.display = "block";
-//   }
-// }
-
-// // 4. 關閉信息框
-// document.getElementById("closeBtn").addEventListener("click", () => {
-//   const infoBox = document.getElementById("infoBox");
-//   infoBox.style.display = "none";
-// });
-
-// 1. 綁定標籤選擇事件 (紅線資料)
+// 1. 綁定紅線標籤點擊事件
 document.querySelectorAll(".red-tag").forEach(tag => {
-  tag.addEventListener("click", (e) => {
-    const selectedTag = e.target.dataset.tag;
-    // 根據標籤篩選資料
-    const filteredInfos = redLineData.filter(item => item.tags.includes(selectedTag));
-    updatePointVisibility(filteredInfos);
-    displayRedLineInfos(filteredInfos);
-  });
+  tag.addEventListener("click", redTagHandler); // 綁定特定處理器
 });
 
-// 2. 綁定地圖點擊事件 (紅線資料)
-document.querySelectorAll(".redLine").forEach(point => {
-  point.addEventListener("click", (e) => {
-    const id = e.target.dataset.id;
-    const infos = redLineData.filter(item => item.id === id);
-    updatePointVisibility(infos);
-    displayRedLineInfos(infos);
-  });
+// 2. 綁定紅線地圖點擊事件
+document.querySelectorAll(".red-point").forEach(point => {
+  point.addEventListener("click", redPointHandler); // 綁定特定處理器
 });
 
-// 3. 更新地點的可見性
-function updatePointVisibility(filteredInfos) {
-  const allPoints = document.querySelectorAll(".redLine");
-  const visibleIds = filteredInfos.map(info => info.id);
-
-  allPoints.forEach(point => {
-    const pointId = point.dataset.id;
-    if (visibleIds.includes(pointId)) {
-      point.style.display = "block"; // 顯示篩選到的地點
-    } else {
-      point.style.display = "none"; // 隱藏未篩選到的地點
-    }
-  });
-}
-
-// 4. 顯示紅線資料
-function displayRedLineInfos(infos) {
-  const tab1_content = document.getElementById("tab1_content");
+// 3. 顯示紅線資訊的函數
+function displayRedInfos(infos) {
+  const infoBox = document.getElementById("tab_content");
+  const infoContent = document.getElementById("tab1_content");
 
   if (infos.length > 0) {
-    tab1_content.innerHTML = ""; // 清空內容
+    infoContent.innerHTML = ""; // 清空之前的內容
     infos.forEach(info => {
       const icons = `
         <div class="icon">
@@ -375,7 +282,7 @@ function displayRedLineInfos(infos) {
           ${info.map ? `<a href="${info.map}" target="_blank"><img src="./img/pin.png" alt="map"></a>` : ""}
         </div>
       `;
-      tab1_content.innerHTML += `
+      infoContent.innerHTML += `
         <div class="info-item">
           <h3>${info.title} (${info.station})</h3>
           <hr class="title-hr">
@@ -389,10 +296,106 @@ function displayRedLineInfos(infos) {
         <hr>
       `;
     });
+    // infoBox.style.display = "block";
   } else {
-    tab1_content.innerHTML = "<p>沒有找到相關的地點。</p>";
+    infoContent.innerHTML = "<p>沒有找到相關的地點。</p>";
+    // infoBox.style.display = "block";
   }
 }
+
+// 4. 定義事件處理器
+function redTagHandler(e) {
+  const selectedTag = e.target.dataset.tag;
+  const filteredInfos = redLineData.filter(item => item.tags.includes(selectedTag));
+  displayRedInfos(filteredInfos);
+}
+
+function redPointHandler(e) {
+  const id = e.target.dataset.id;
+  const infos = redLineData.filter(item => item.id === id);
+  displayRedInfos(infos);
+}
+
+// // 4. 關閉信息框
+// document.getElementById("closeBtn").addEventListener("click", () => {
+//   const infoBox = document.getElementById("infoBox");
+//   infoBox.style.display = "none";
+// });
+
+
+
+
+
+// 1. 綁定標籤選擇事件 (紅線資料)
+// document.querySelectorAll(".red-tag").forEach(tag => {
+//   tag.addEventListener("click", (e) => {
+//     const selectedTag = e.target.dataset.tag;
+//     // 根據標籤篩選資料
+//     const filteredInfos = redLineData.filter(item => item.tags.includes(selectedTag));
+//     updatePointVisibility(filteredInfos);
+//     displayRedLineInfos(filteredInfos);
+//   });
+// });
+
+// // 2. 綁定地圖點擊事件 (紅線資料)
+// document.querySelectorAll(".redLine").forEach(point => {
+//   point.addEventListener("click", (e) => {
+//     const id = e.target.dataset.id;
+//     const infos = redLineData.filter(item => item.id === id);
+//     updatePointVisibility(infos);
+//     displayRedLineInfos(infos);
+//   });
+// });
+
+// // 3. 更新地點的可見性
+// function updatePointVisibility(filteredInfos) {
+//   const allPoints = document.querySelectorAll(".redLine");
+//   const visibleIds = filteredInfos.map(info => info.id);
+
+//   allPoints.forEach(point => {
+//     const pointId = point.dataset.id;
+//     if (visibleIds.includes(pointId)) {
+//       point.style.display = "block"; // 顯示篩選到的地點
+//     } else {
+//       point.style.display = "none"; // 隱藏未篩選到的地點
+//     }
+//   });
+// }
+
+// // 4. 顯示紅線資料
+// function displayRedLineInfos(infos) {
+//   const tab1_content = document.getElementById("tab1_content");
+
+//   if (infos.length > 0) {
+//     tab1_content.innerHTML = ""; // 清空內容
+//     infos.forEach(info => {
+//       const icons = `
+//         <div class="icon">
+//           ${info.web ? `<a href="${info.web}" target="_blank"><img src="./img/web.png" alt="網站"></a>` : ""}
+//           ${info.fb ? `<a href="${info.fb}" target="_blank"><img src="./img/facebook.png" alt="fb"></a>` : ""}
+//           ${info.instagram ? `<a href="${info.instagram}" target="_blank"><img src="./img/instagram (1).png" alt="instagram"></a>` : ""}
+//           ${info.tiktok ? `<a href="${info.tiktok}" target="_blank"><img src="./img/social-media (2).png" alt="tiktok"></a>` : ""}
+//           ${info.map ? `<a href="${info.map}" target="_blank"><img src="./img/pin.png" alt="map"></a>` : ""}
+//         </div>
+//       `;
+//       tab1_content.innerHTML += `
+//         <div class="info-item">
+//           <h3>${info.title} (${info.station})</h3>
+//           <hr class="title-hr">
+//           <p><strong>營業時間：</strong>${info.time}</p>
+//           <p><strong>地址：</strong>${info.address}</p>
+//           <p><strong>電話：</strong>${info.tel}</p>
+//           <p><strong>其他：</strong>${info.other}</p>
+//           <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
+//           ${icons}
+//         </div>
+//         <hr>
+//       `;
+//     });
+//   } else {
+//     tab1_content.innerHTML = "<p>沒有找到相關的地點。</p>";
+//   }
+// }
 
 // 4. 關閉紅線信息框
 // document.getElementById("redCloseBtn").addEventListener("click", () => {

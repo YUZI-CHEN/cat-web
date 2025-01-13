@@ -45,7 +45,7 @@ function renderStations(data) {
     if (station.hasData) {
       const stationImage = `
         <image 
-          class="${station.id}  point  redLine" 
+          class="${station.id}  point  red-point" 
           data-name="${station.name}" 
           data-id="${station.id}" 
           href="./img/MAP-點.svg" />
