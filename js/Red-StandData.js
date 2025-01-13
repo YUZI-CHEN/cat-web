@@ -329,6 +329,7 @@ document.querySelectorAll(".red-tag").forEach(tag => {
     const selectedTag = e.target.dataset.tag;
     // 根據標籤篩選資料
     const filteredInfos = redLineData.filter(item => item.tags.includes(selectedTag));
+    updatePointVisibility(filteredInfos);
     displayRedLineInfos(filteredInfos);
   });
 });
@@ -338,17 +339,32 @@ document.querySelectorAll(".redLine").forEach(point => {
   point.addEventListener("click", (e) => {
     const id = e.target.dataset.id;
     const infos = redLineData.filter(item => item.id === id);
+    updatePointVisibility(infos);
     displayRedLineInfos(infos);
   });
 });
 
-// 3. 顯示紅線資料
+// 3. 更新地點的可見性
+function updatePointVisibility(filteredInfos) {
+  const allPoints = document.querySelectorAll(".redLine");
+  const visibleIds = filteredInfos.map(info => info.id);
+
+  allPoints.forEach(point => {
+    const pointId = point.dataset.id;
+    if (visibleIds.includes(pointId)) {
+      point.style.display = "block"; // 顯示篩選到的地點
+    } else {
+      point.style.display = "none"; // 隱藏未篩選到的地點
+    }
+  });
+}
+
+// 4. 顯示紅線資料
 function displayRedLineInfos(infos) {
-  const infoBox = document.getElementById("redInfoBox");
-  const infoContent = document.getElementById("redInfoContent");
-  
+  const tab1_content = document.getElementById("tab1_content");
+
   if (infos.length > 0) {
-    infoContent.innerHTML = ""; // 清空内容
+    tab1_content.innerHTML = ""; // 清空內容
     infos.forEach(info => {
       const icons = `
         <div class="icon">
@@ -359,7 +375,7 @@ function displayRedLineInfos(infos) {
           ${info.map ? `<a href="${info.map}" target="_blank"><img src="./img/pin.png" alt="map"></a>` : ""}
         </div>
       `;
-      infoContent.innerHTML += `
+      tab1_content.innerHTML += `
         <div class="info-item">
           <h3>${info.title} (${info.station})</h3>
           <hr class="title-hr">
@@ -373,15 +389,13 @@ function displayRedLineInfos(infos) {
         <hr>
       `;
     });
-    infoBox.style.display = "block";
   } else {
-    infoContent.innerHTML = "<p>沒有找到相關的地點。</p>";
-    infoBox.style.display = "block";
+    tab1_content.innerHTML = "<p>沒有找到相關的地點。</p>";
   }
 }
 
 // 4. 關閉紅線信息框
-document.getElementById("redCloseBtn").addEventListener("click", () => {
-  const infoBox = document.getElementById("redInfoBox");
-  infoBox.style.display = "none";
-});
+// document.getElementById("redCloseBtn").addEventListener("click", () => {
+//   const infoBox = document.getElementById("redInfoBox");
+//   infoBox.style.display = "none";
+// });
