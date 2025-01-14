@@ -45,12 +45,14 @@ function displayYellowInfos(infos) {
         <div class="info-item">
           <h3>${info.title} (${info.station})</h3>
           <hr class="title-hr">
+          <div class="info-item-p">
           <p><strong>營業時間：</strong>${info.time}</p>
           <p><strong>地址：</strong>${info.address}</p>
           <p><strong>電話：</strong>${info.tel}</p>
           <p><strong>其他：</strong>${info.other}</p>
           <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
           ${icons}
+          </div>
         </div>
         <hr>
       `;

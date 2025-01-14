@@ -100,8 +100,8 @@ main {
 }
 .tab button {
   display: block;
-  background-color: inherit;
-  color: #333333;
+  background-color: #17171e;
+  color: white;
   padding: 22px 16px;
   width: 100%;
   border: none;
@@ -131,17 +131,21 @@ main {
   font-size: 20px;
   margin: 10px;
 }
-#search-line .tag {
+#search-line .searchContent {
+  margin: 10px;
+}
+#search-line .searchContent .tag {
   display: inline-block;
   margin: 5px;
   padding: 5px 10px;
-  background-color: #eee;
+  background-color: #17171e;
+  color: white;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-#search-line .selected {
+#search-line .searchContent .selected {
   background-color: #A6C9E2;
   color: white;
 }
@@ -155,17 +159,21 @@ main {
   font-size: 20px;
   margin: 10px;
 }
-#search-label .tag {
+#search-label .labelContent {
+  margin: 10px;
+}
+#search-label .labelContent .tag {
   display: inline-block;
   margin: 5px;
   padding: 5px 10px;
-  background-color: #eee;
+  background-color: #17171e;
+  color: white;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-#search-label .selected {
+#search-label .labelContent .selected {
   background-color: #A6C9E2;
   color: white;
 }
@@ -176,11 +184,12 @@ main {
   }
 }
 .tab_div {
-  margin-top: 15px;
+  margin-top: 30px;
   width: 100%;
   transform: translateZ(0);
   border: 1px solid #ccc;
   height: auto;
+  border-radius: 5px;
 }
 .tab_div .tabs_menu {
   /*   background-color:blue; */
@@ -210,6 +219,13 @@ main {
   color: white;
   z-index: 0;
   flex: 1;
+  text-align: center;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
   /* hover effect */
 }
 .tab_div .tabs_menu .tabs li:before {
@@ -220,13 +236,15 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ff9bb4;
+  background: #A6C9E2;
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: transform 0.5s ease-out;
 }
 .tab_div .tabs_menu .tabs li:hover:before {
   transform: scaleX(1);
+  transform: scale(1.1);
+  box-shadow: #333333;
 }
 
 #tab1,
@@ -300,6 +318,17 @@ main {
 #tab6_content .icon {
   display: flex;
   margin: 0 70%;
+  transition: transform 0.3s ease;
+  /* 平滑過渡效果 */
+}
+#tab1_content .icon:hover,
+#tab2_content .icon:hover,
+#tab3_content .icon:hover,
+#tab4_content .icon:hover,
+#tab5_content .icon:hover,
+#tab6_content .icon:hover {
+  transform: translateY(-5px);
+  /* 懸停時向上移動 5px */
 }
 #tab1_content .icon img,
 #tab2_content .icon img,
@@ -310,13 +339,27 @@ main {
   width: 24px;
   height: 24px;
   margin-right: 5px;
+  transition: transform 0.3s ease; /* 平滑過渡效果 */
+}
+#tab1_content .icon img:hover,
+#tab2_content .icon img:hover,
+#tab3_content .icon img:hover,
+#tab4_content .icon img:hover,
+#tab5_content .icon img:hover,
+#tab6_content .icon img:hover {
+  transform: scale(1.2); /* 懸停時稍微放大圖示 */
 }
 
 .info-item h3 {
   font-size: 18px;
   text-align: center;
+  background-color: #333333;
+  color: #fff;
 }
-.info-item p {
+.info-item .info-item-p {
+  margin-left: 5px;
+}
+.info-item .info-item-p p {
   text-align: left;
   line-height: 1.2em;
   font-size: 16px;
@@ -348,7 +391,8 @@ main {
 .mrt-svg .point {
   width: 30px;
   height: 30px;
-  transition: all 0.3s ease; /* 添加過渡效果 */
+  transition: all 0.3s ease;
+  /* 添加過渡效果 */
 }
 .mrt-svg .point:hover {
   cursor: pointer;
