@@ -56,6 +56,20 @@ a {
   /* 自訂字型名稱 */
   src: url("../font/jf-openhuninn-2.0.ttf");
 }
+body {
+  overflow: hidden;
+}
+
+#canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* 放在背景層 */
+}
+
 main {
   width: 80%;
   height: 100%;
@@ -126,6 +140,7 @@ main {
   text-align: center;
   height: auto;
   border-radius: 5px;
+  background-color: #fff;
 }
 #search-line h3 {
   font-size: 20px;
@@ -154,6 +169,7 @@ main {
   text-align: center;
   height: auto;
   border-radius: 5px;
+  background-color: #fff;
 }
 #search-label h3 {
   font-size: 20px;
@@ -277,6 +293,7 @@ main {
 #tab4_content,
 #tab5_content,
 #tab6_content {
+  background-color: #fff;
   float: right;
   padding-top: 5%;
   max-height: 400px;
@@ -384,6 +401,7 @@ main {
 .mrt-svg {
   /* 圖片容器的寬度，可根據需求設置 */
   max-width: 100%;
+  background-color: #fff;
   height: auto;
   margin: 50px;
   position: relative;
