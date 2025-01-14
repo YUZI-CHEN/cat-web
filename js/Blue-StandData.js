@@ -203,7 +203,7 @@ document.querySelectorAll(".blue-point").forEach(point => {
 
 // 3. 顯示藍線資訊的函數
 function displayBlueInfos(infos) {
-  const infoBox = document.getElementById("tab_content");
+
   const infoContent = document.getElementById("tab2_content");
 
   if (infos.length > 0) {

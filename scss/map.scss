@@ -12,7 +12,9 @@ main {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  
   font-family: 'FlourFont';
+  color: #333333;
 
 }
 
@@ -22,81 +24,91 @@ main {
   flex-direction: column;
   /* 將方向設置為垂直排列 */
 
-
   height: auto;
-  width: 25%;
+  width: 35%;
   margin-top: 100px;
+
   padding-left: 20px;
+ 
+}
 
   .search {
 
     padding: 0px;
     border: 1px solid #ccc;
     width: 100%;
-  
+
     height: 300px;
     display: flex;
     flex-direction: column;
-    .tag {
-      cursor: pointer;
-      padding: 5px 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin: 5px;
-      display: inline-block;
-    }
-    
-    .tag.active {
-      background-color: #007bff;
-      color: #fff;
-      border-color: #007bff;
-    }
-    
-  }
 
+    
 }
 
 .tab {
 
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 100%;
+
   height: auto;
   display: flex;
+  border-radius: 5px;
 
+.tabbtn01{
+
+  border-radius: 5px 0 0  5px;
+}
+.tabbtn2{
+
+  border-radius: 0 5px  5px;
+}
 
   button {
     display: block;
     background-color: inherit;
-    color: black;
+    color: #333333;
     padding: 22px 16px;
     width: 100%;
     border: none;
     outline: none;
-    text-align: left;
+  
     cursor: pointer;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  
+    transition: background-color 0.3s;
 
     &:hover {
-      background-color: #ddd;
+      background-color: #A6C9E2;
+      color: #fff;
     }
 
-    .active {
-      background-color: #ccc;
-    }
+   
+
+  }
+  .tablinks.active {
+    background-color:  #A6C9E2;
+    color: #fff;
   }
 }
 
 #search-line {
+  text-align: center;
+  height: auto;
+  border-radius: 5px;
+  
   h3 {
-    font-family: 'FlourFont', sans-serif;
-    font-size: 24px;
+   
+    font-size: 20px;
+    margin: 10px;
+   
   }
 
   .tag {
     display: inline-block;
-    margin: 2px;
+    margin: 5px;
     padding: 5px 10px;
     background-color: #eee;
     border-radius: 5px;
@@ -106,7 +118,37 @@ main {
   }
 
   .selected {
-    background-color: #007BFF;
+    background-color:  #A6C9E2;
+    color: white;
+  }
+}
+
+#search-label{
+  text-align: center;
+  height: auto;
+  border-radius: 5px;
+
+
+  h3 {
+ 
+    font-size: 20px;
+    margin: 10px;
+   
+  }
+  .tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+
+  .selected {
+    background-color: #A6C9E2;
     color: white;
   }
 }
@@ -115,19 +157,187 @@ main {
 
 
 
+// 資訊陳列區
+
+@media screen and (max-width: 400px) {
+  .tab_div {
+    display: none;
+  }
+}
+
+.tab_div {
+  margin-top: 15px;
+  width:100%;
+  transform: translateZ(0);
+  border: 1px solid #ccc;
+  height: auto;
+
+  .tabs_menu {
+    /*   background-color:blue; */
+  
+    width: 20%;
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .tabs {
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+     
+     
+      li {
+        list-style-type: none;
+        border-right: 2px solid white;
+        font-size: 18px;
+        color: white;
+       
+        /* hover effect */
+        display: inline-block;
+        position: relative;
+        padding: 1em;
+        cursor: pointer;
+        background: #17171e;
+        color: white;
+        z-index: 0;
+        flex: 1;
+      
+    
+        /* hover effect */
+        &:before {
+          content: " ";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #ff9bb4;
+          transform: scaleX(0);
+          transform-origin: 0 50%;
+          transition: transform .5s ease-out;
+    
+        }
+    
+        &:hover {
+          &:before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    
+    }
+  }
+}
+
+
+
+
+
+#tab1,
+#tab2,
+#tab3,
+#tab4,
+#tab5,
+#tab6 {
+  padding-top: 10%;
+  padding-bottom: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  flex: 1;
+
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab_content {
+  display: flex;
+  p{
+    line-height: 5em;
+    text-align: center;
+    font-size: 18px;
+    
+  }
+}
+
+
+#tab1_content,
+#tab2_content,
+#tab3_content,
+#tab4_content,
+#tab5_content,
+#tab6_content {
+  float: right;
+
+  padding-top: 5%;
+
+  max-height: 400px;
+  /* 你可以根据需要调整高度 */
+
+  width: 400px;
+  overflow-y: auto;
+
+  /* 使内容溢出时出现垂直滚动条 */
+  &:-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &:-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  &:-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+  .icon {
+    display: flex;
+    margin: 0 70%;
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+    }
+  }
+}
+
+// 資訊區
+.info-item {
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  p{
+    text-align: left;
+    line-height: 1.2em;
+    font-size: 16px;
+    
+
+  }
+
+}
+
+
+
+
 // map區
 
 #map {
+ 
+  
   width: 60%;
-  height: 100%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  // border: 0.2px solid #cac6c6;
+  border-radius: 10px;
+  margin: 10px 0;
   .line-group {
     display: none;
-
-
   }
 
   .active {
@@ -135,12 +345,11 @@ main {
   }
 
 }
-
-
 .mrt-svg {
 
   /* 圖片容器的寬度，可根據需求設置 */
   max-width: 100%;
+
 
   height: auto;
 
@@ -150,14 +359,12 @@ main {
   .point {
     width: 30px;
     height: 30px;
+    transition: all 0.3s ease; /* 添加過渡效果 */
 
 
 
     &:hover {
-      color: red;
-      /* 悬停时字体变红 */
-      text-decoration: underline;
-      /* 添加下划线 */
+    
       cursor: pointer;
     }
   }
@@ -961,286 +1168,4 @@ main {
 
 }
 
-// 資訊陳列區
 
-@media screen and (max-width: 400px) {
-  .tab_div {
-    display: none;
-  }
-}
-
-.tab_div {
-  width: 500px;
-  transform: translateZ(0);
-  border: 1px solid blue;
-
-  .tabs_menu {
-    /*   background-color:blue; */
-    padding-top: 1%;
-    width: 20%;
-    float: left;
-  }
-}
-
-
-
-ul.tabs {
-  padding: 0;
-
-  li {
-    list-style-type: none;
-    border-right: 2px solid white;
-    font-size: 18px;
-    color: white;
-    /*   transition: background-color 0.2s ease; */
-    /* hover effect */
-    display: inline-block;
-    position: relative;
-    padding: 1em;
-    cursor: pointer;
-    background: #17171e;
-    color: white;
-    z-index: 0;
-/* hover effect */
-    &:before {
-      content: " ";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #ff9bb4;
-      transform: scaleX(0);
-      transform-origin: 0 50%;
-      transition: transform .5s ease-out;
-
-    }
-    &:hover{
-      &:before{
-        transform: scaleX(1);
-      }
-    }
-  }
-
-}
-
-#tab1,
-#tab2,
-#tab3,
-#tab4 {
-  padding-top: 10%;
-  padding-bottom: 20%;
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 100%;
-  height: auto;
-}
-.tab_content{
-  display: flex;
-}
-
-
-#tab1_content,
-#tab2_content,
-#tab3_content,
-#tab4_content{
-  float: right;
- 
-  // padding-top: 5%;
-  padding: 5px;
-  max-height: 300px;
-  /* 你可以根据需要调整高度 */
- 
-  width: 400px;
-  overflow-y: auto;
-
-  /* 使内容溢出时出现垂直滚动条 */
-  &:-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &:-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-  }
-
-  &:-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
-
-  .icon {
-    display: flex;
-    margin: 0 70%;
-
-    img {
-      width: 24px;
-      height: 24px;
-      margin-right: 5px;
-    }
-  }
-}
-// #tab2_content,
-// #tab3_content,
-// #tab4_content {
-//   /*   background-color:red; */
-//   float: right;
-//   width: 70%;
-//   height: auto;
-//   padding-top: 5%;
-
-//   p {
-    
-//     font-size: 16px;
-//     color: black;
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-// 資訊區
-.info-box {
-  position: absolute;
-  top: 20px;
-  right: 150px;
-  background-color: white;
-  border: 2px solid #7e3d3d;
-  border-radius: 10px;
-  padding: 0 20px;
-  width: 450px;
-  height: auto;
-  display: none;
-
-
-  .icon {
-    display: flex;
-    margin: 0 70%;
-
-    img {
-      width: 24px;
-      height: 24px;
-      margin-right: 5px;
-    }
-  }
-
-}
-
-#infoContent {
-  padding: 5px;
-  max-height: 300px;
-  /* 你可以根据需要调整高度 */
-  width: 400px;
-  overflow-y: auto;
-
-  /* 使内容溢出时出现垂直滚动条 */
-  .title-hr {
-    border: 0;
-    border-top: 2px dotted #a2a9b6;
-
-    &:-webkit-scrollbar {
-      width: 8px;
-    }
-
-    &:-webkit-scrollbar-thumb {
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
-    }
-
-    &:-webkit-scrollbar-track {
-      background-color: #f1f1f1;
-    }
-  }
-
-}
-
-/* 设定infoContent的高度与垂直滚动条 */
-
-/* 如果想要滚动条美化，可以使用如下样式 */
-
-
-.close-btn {
-  display: inline-block;
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  font-size: 12px;
-  cursor: pointer;
-  float: right;
-  border-radius: 3px;
-
-  &:hover {
-    background-color: #ff0000;
-  }
-}
-
-// 淡水線資訊區
-#redInfoBox {
-  position: absolute;
-  top: 20px;
-  right: 300px;
-  background-color: white;
-  border: 2px solid #7e3d3d;
-  border-radius: 10px;
-  padding: 0 20px;
-  width: 450px;
-  height: auto;
-  display: none;
-}
-
-#redInfoContent {
-  padding: 5px;
-  max-height: 300px;
-  /* 你可以根据需要调整高度 */
-  width: 400px;
-  overflow-y: auto;
-
-  /* 使内容溢出时出现垂直滚动条 */
-  &:-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &:-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-  }
-
-  &:-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
-
-  .icon {
-    display: flex;
-    margin: 0 70%;
-
-    img {
-      width: 24px;
-      height: 24px;
-      margin-right: 5px;
-    }
-  }
-}
-
-#redCloseBtn {
-  display: inline-block;
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  font-size: 12px;
-  cursor: pointer;
-  float: right;
-  border-radius: 3px;
-
-  &:hover {
-    background-color: #ff0000;
-  }
-}

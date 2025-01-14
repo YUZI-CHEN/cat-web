@@ -1,5 +1,19 @@
 const brownLineData=[
   {
+    "id":"Nangang-Exhibition",
+    "station":"南港展覽館",
+    "title":"幸福肥計劃咖啡",
+    "time":"周一~周二:公休、周三~周日:09:00~19:00",
+    "address":"台北市南港區南港路一段171巷16號",
+    "tel":"(02)27830602",
+    "fb":"https://www.facebook.com/happinessfei/",
+
+    "map":"https://maps.app.goo.gl/DxrBpRS5JRCFBhYz9",
+    "other":"禁12歲以下",
+    "tags":["禁年齡"]
+
+  },
+  {
     "id":"Dazhi",
     "station":"大直站",
     "title":"杜鵑窩咖啡",
@@ -64,56 +78,63 @@ const brownLineData=[
     },
  
 ];
-// 绑定事件
-document.querySelectorAll(".point").forEach((point) => {
-  point.addEventListener("click", (e) => {
-    const id = e.target.dataset.id;
-    const infos = brownLineData.filter(item => item.id === id);
-    displayInfos(infos);
-  });
+// 1. 綁定棕線標籤點擊事件
+document.querySelectorAll(".brown-tag").forEach(tag => {
+  tag.addEventListener("click", brownTagHandler); // 綁定特定處理器
 });
 
-// 顯示信息
-function displayInfos(infos) {
-  const infoBox = document.getElementById("infoBox");
-  const infoContent = document.getElementById("infoContent");
+// 2. 綁定棕線地圖點擊事件
+document.querySelectorAll(".brown-point").forEach(point => {
+  point.addEventListener("click", brownPointHandler); // 綁定特定處理器
+});
+
+// 3. 顯示棕線資訊的函數
+function displayBrownInfos(infos) {
+
+  const infoContent = document.getElementById("tab5_content");
+
   if (infos.length > 0) {
-    // 清空之前的內容
-    infoContent.innerHTML = "";
-    // 判斷icon是否要出現
+    infoContent.innerHTML = ""; // 清空之前的內容
     infos.forEach(info => {
       const icons = `
-      <div class="icon">
-        ${info.web ? `<a href="${info.web}" target="_blank"><img src="./img/web.png" alt="網站"></a>` : ""}
-        ${info.fb ? `<a href="${info.fb}" target="_blank"><img src="./img/facebook.png" alt="fb"></a>` : ""}
-        ${info.instagram ? `<a href="${info.instagram}" target="_blank"><img src="./img/instagram (1).png" alt="instagram"></a>` : ""}
-        ${info.tiktok ? `<a href="${info.tiktok}" target="_blank"><img src="./img/social-media (2).png" alt="tiktok"></a>` : ""}
-        ${info.map ? `<a href="${info.map}" target="_blank"><img src="./img/pin.png" alt="map"></a>` : ""}
-      </div>
-    `;
-      // 顯示資料
+        <div class="icon">
+          ${info.web ? `<a href="${info.web}" target="_blank"><img src="./img/web.png" alt="網站"></a>` : ""}
+          ${info.fb ? `<a href="${info.fb}" target="_blank"><img src="./img/facebook.png" alt="fb"></a>` : ""}
+          ${info.instagram ? `<a href="${info.instagram}" target="_blank"><img src="./img/instagram (1).png" alt="instagram"></a>` : ""}
+          ${info.tiktok ? `<a href="${info.tiktok}" target="_blank"><img src="./img/social-media (2).png" alt="tiktok"></a>` : ""}
+          ${info.map ? `<a href="${info.map}" target="_blank"><img src="./img/pin.png" alt="map"></a>` : ""}
+        </div>
+      `;
       infoContent.innerHTML += `
-      <div class="info-item">
-        <h3>${info.title} (${info.station})</h3>
-        <hr class="title-hr">
-        <p><strong>營業時間：</strong>${info.time}</p>
-        <p><strong>地址：</strong>${info.address}</p>
-        <p><strong>電話：</strong>${info.tel}</p>
-        <p><strong>其他：</strong>${info.other}</p>
-        <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
-        ${icons}
-       </div> 
-       <hr>
+        <div class="info-item">
+          <h3>${info.title} (${info.station})</h3>
+          <hr class="title-hr">
+          <p><strong>營業時間：</strong>${info.time}</p>
+          <p><strong>地址：</strong>${info.address}</p>
+          <p><strong>電話：</strong>${info.tel}</p>
+          <p><strong>其他：</strong>${info.other}</p>
+          <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
+          ${icons}
+        </div>
+        <hr>
       `;
     });
-
-
-    infoBox.style.display = "block";
+    // infoBox.style.display = "block";
+  } else {
+    infoContent.innerHTML = "<p>沒有找到相關的地點。</p>";
+    // infoBox.style.display = "block";
   }
 }
 
-// 關閉信息框
-document.getElementById("closeBtn").addEventListener("click", () => {
-  const infoBox = document.getElementById("infoBox");
-  infoBox.style.display = "none";
-});
+// 4. 定義事件處理器
+function brownTagHandler(e) {
+  const selectedTag = e.target.dataset.tag;
+  const filteredInfos = brownLineData.filter(item => item.tags.includes(selectedTag));
+  displayBlueInfos(filteredInfos);
+}
+
+function  brownPointHandler(e) {
+  const id = e.target.dataset.id;
+  const infos = brownLineData.filter(item => item.id === id);
+  displayBrownInfos(infos);
+}

@@ -23,7 +23,7 @@ const stationDataRed = [
   { id: "Chian-Kai-Shek", name: "中正紀念堂", hasData: true },
   { id: "Dongmen", name: "東門", hasData: false },
   { id: "Daan-Park", name: "大安森林公園", hasData: false },
-  { id: "Daan", name: "大安", hasData: false },
+  { id: "Daan", name: "大安", hasData: true },
   { id: "Xinyi-Anhe", name: "信義安和", hasData: true },
   { id: "Taipei101", name: "台北101", hasData: true },
   { id: "Xiangshan", name: "象山", hasData: false },
