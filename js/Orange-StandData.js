@@ -192,7 +192,7 @@ function displayOrangeInfos(infos) {
           <p><strong>地址：</strong>${info.address}</p>
           <p><strong>電話：</strong>${info.tel}</p>
           <p><strong>其他：</strong>${info.other}</p>
-          <p><strong>標籤：</strong>${info.tags.join(", ")}</p>
+          
           ${icons}
           </div>
         </div>

@@ -1,119 +1,198 @@
 @use 'reset';
 
-.bubble-circle {
-  animation: rotating 15s linear infinite;
-  background: #47DDFA;
-  border-radius: 335.383px 406px 323.168px 384.988px;
-  bottom: 0;
-  display: block;
-  height: 500px;
-  margin: 50px auto;
-  transition: background-color 2s ease-out;
-  width: 500px;
-  background-size: cover;
-  background-position: center;
-  transition: border-color 0.5s, border-width 0.5s;
-  /* 添加平滑过渡效果 */
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+@font-face {
+  font-family: 'Gugi';
+  /* 自訂字型名稱 */
+  src: url('../font/Gugi-Regular.ttf')
+}
+
+
+body {
+  background-color: #dae4eb;
+  display: flex;
+  justify-content: space-between;
 
 }
 
-@-webkit-keyframes rotating {
 
-  /* Safari and Chrome */
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+
+
+
+// 文字動畫
+.title-word {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #333;
+  position: relative;
+}
+
+.title-word:hover {
+  transform: translateY(-10px) rotate(-5deg);
+
+}
+
+/* 波浪动画 */
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
   }
 
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-5px) rotate(-5deg);
   }
 }
 
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+.title-word-5 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-6 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-7 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1)
   }
 
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+  32% {
+    color: var(--color-1)
+  }
+
+  33% {
+    color: var(--color-2)
+  }
+
+  65% {
+    color: var(--color-2)
+  }
+
+  66% {
+    color: var(--color-3)
+  }
+
+  99% {
+    color: var(--color-3)
+  }
+
+  100% {
+    color: var(--color-1)
   }
 }
 
-.rotating {
-  -webkit-animation: rotating 15s linear infinite;
-  -moz-animation: rotating 15s linear infinite;
-  -ms-animation: rotating 15s linear infinite;
-  -o-animation: rotating 15s linear infinite;
-  animation: rotating 15s linear infinite;
-}
-
-//腳印動畫
-.wrapper {
-
-  margin: 0 auto;
-  max-width: 100%;
-  overflow: hidden;
+/* Here are just some visual styles. 🖌 */
+#item{
+  position: relative;
+  left: 5%;
+ margin-top: 10%;
+ margin-left: 5%;
+  width: 60%;
+  height: 80vh;
+  img{
+    top: 20%;
+  }
 
   .container {
-    margin-top: 100px;
-
-    .contain-animation {
-      height: 200px;
-
-      .contain-dog {
-        position: relative;
-        margin: -50px auto;
-
-        width: 880px;
-        height: 100px;
-
-        .prints {
-
-          width: 100%;
-          height: auto;
-
-        }
-
-        .cover {
-          position: absolute;
-          top: -40px;
-
-          background: #fff;
-          height: 250px;
-          width: 1100px;
-          animation: walk 6s steps(6, end) infinite;
-          -webkit-animation: walk 6s steps(6, end) infinite;
-
-
-        }
-
-      }
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 45vh;
+    margin-left: 15px;
+  
+    .title {
+      font-family: "Gugi", sans-serif;
+      font-weight: 800;
+      font-size: 7vw;
+      text-transform: uppercase;
+      margin-bottom: 15%;
     }
   }
 }
 
 
-@keyframes walk {
-  to {
-    transform: translateX(870px);
-  }
+
+
+
+// .bg-img {
+//   position: absolute;
+//   width: 18%;
+//   height: 15%;
+//   bottom: 25%;
+//   right: 12%;
+// }
+
+
+// button樣式
+.text-button-container {
+  width: 300px; /* 设置宽度 */
+  height: 100px; /* 设置高度 */
+  display: flex; /* 用于居中内容 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  margin-top: 32%;
+  margin-right: 10%;
+
+ 
 }
 
-@-webkit-keyframes walk {
-  to {
-    -webkit-transform: translateX(870px);
-  }
+/* 按钮样式 */
+.text-button {
+  font-size: 67px; /* 字体大小 */
+  font-weight: bold; /* 字体粗细 */
+  padding: 10px 20px; /* 内边距 */
+  color: #111111; /* 文字颜色 */
+  cursor: pointer;
+
+}
+
+/* 悬停效果 */
+.text-button:hover {
+
+  transform: scale(2.2); /* 放大效果 */
+
+}
+
+/* 点击效果 */
+.text-button:active {
+  transform: scale(0.9); /* 缩小效果 */
+  
 }
